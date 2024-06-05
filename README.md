@@ -2,11 +2,11 @@
 Workflows ERP Docs
 
 ```mermaid
-NOTIFICATIONS
 
-OVERDUE TASK
+flowchart TD=
+title NOTIFICATIONS
 
-flowchart TD
+title OVERDUE TASK
     I1[Task Due Date]
     I2{Check if Task is Past Due}
     I3[Task is Past Due]
@@ -27,9 +27,8 @@ flowchart TD
     I7 --> I8
 
 
-SALES
-
 flowchart TD
+title SALES
     A1[Lead Generation]
     A2[Initial Contact Follow-Up Date]
     A3{Check Contact Made by Follow-Up Date}
@@ -79,9 +78,10 @@ flowchart TD
     A5f -->|No| A5g
     A5g --> A5h
 
-DIGITAL AGENCY
+
 
 flowchart TD
+title DIGITAL AGENCY
     B1[Project Initiation]
     B2[Project Planning]
     B3[Task Assignment]
@@ -107,9 +107,10 @@ flowchart TD
     B6 --> B7
     B7 --> B8
 
-GRAPHIC DESIGN
+
 
 flowchart TD
+title GRAPHIC DESIGN
     E1[Design Request Reception]
     E2[Initial Design Variations]
     E3[Client Feedback]
@@ -130,9 +131,9 @@ flowchart TD
     E5b --> E4
     E6 --> E7
 
-RECIEVING
 
 flowchart TD
+title RECIEVING
     C1[Order Placement and Notification]
     C2[Receiving Shipment]
     C3[Inspection and Quality Control]
@@ -154,9 +155,9 @@ flowchart TD
     C6 --> C7
     C7 --> C8
 
-SCREEN PRINTING
 
 flowchart TD
+title SCREEN PRINTING
     D1[Order Reception]
     D2[Material Collection]
     D3[Screen Preparation]
@@ -180,9 +181,10 @@ flowchart TD
     D7b --> D5
     D8 --> D9
 
-EMBROIDERY
+
 
 flowchart TD
+title EMBROIDERY
     F1[Order Reception]
     F2[Material Collection]
     F3[Design Setup]
@@ -202,9 +204,9 @@ flowchart TD
     F5b --> F4
     F6 --> F7
 
-HEAT-TRANSFER
 
 flowchart TD
+title HEAT-TRANSFER
     G1[Order Reception]
     G2[Material Collection]
     G3[Design Setup]
@@ -224,9 +226,10 @@ flowchart TD
     G5b --> G4
     G6 --> G7
 
-FULFILLMENT
+
 
 flowchart TD
+title FULFILLMENT
     H1[Order Reception]
     H2[Packaging Preparation]
     H3[Item Packaging]
