@@ -198,7 +198,7 @@ flowchart TD
     F1[Order Reception]
     F2[Material Collection]
     F3[Design Setup]
-    F4[Embroidery Process (Start Job Timer)]
+    F4[Embroidery Process Start Timer]
     F5[Quality Check]
     F5a{Rework Needed}
     F5b[Rework Process]
@@ -212,17 +212,19 @@ flowchart TD
     F5a -->|Yes| F5b
     F5a -->|No| F6
     F5b --> F4
-    F6 --> F7
+    F6
+
 
 ```
 
 HEAT-TRANSFER WORKFLOW
 ```mermaid
 flowchart TD
+    %% Vinyl Heat Press Department Flowchart %%
     G1[Order Reception]
     G2[Material Collection]
     G3[Design Setup]
-    G4[Vinyl Heat Press Process (Start Job Timer)]
+    G4[Vinyl Heat Press Process Start Timer]
     G5[Quality Check]
     G5a{Rework Needed}
     G5b[Rework Process]
@@ -236,7 +238,9 @@ flowchart TD
     G5a -->|Yes| G5b
     G5a -->|No| G6
     G5b --> G4
-    G6 --> G7
+    G6
+
+
 
 ```
 
