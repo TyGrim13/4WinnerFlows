@@ -285,3 +285,17 @@ flowchart TD
 
 
 ```
+
+CLOSING SALES & COMMISSION PAYOUT FLOW
+```mermaid
+flowchart TD
+    A1[Saleperson Closes Deal - payment made]
+    A2[Client Sign of all documetation & terms]
+    A3{check all neccisary docs,logo,files recieved}
+    A3a[submit doc for approval from supervisor/manage]
+if not approved sent back to saleperson to finalize
+    A3b[Approval of doc]
+    A3c[Sale Closed]
+    A3d{Commission paid within time period}
+
+```
