@@ -5,7 +5,7 @@ Workflows ERP Docs
 
 flowchart TD
 
-    title OVERDUE TASK
+    subgraph OVERDUE TASK
     I1[Task Due Date]
     I2{Check if Task is Past Due}
     I3[Task is Past Due]
@@ -27,7 +27,7 @@ flowchart TD
 
 
 flowchart TD
-title SALES
+subgraph SALES
     A1[Lead Generation]
     A2[Initial Contact Follow-Up Date]
     A3{Check Contact Made by Follow-Up Date}
@@ -80,7 +80,7 @@ title SALES
 
 
 flowchart TD
-title DIGITAL AGENCY
+subgraph DIGITAL AGENCY
     B1[Project Initiation]
     B2[Project Planning]
     B3[Task Assignment]
@@ -109,7 +109,7 @@ title DIGITAL AGENCY
 
 
 flowchart TD
-title GRAPHIC DESIGN
+subgraph GRAPHIC DESIGN
     E1[Design Request Reception]
     E2[Initial Design Variations]
     E3[Client Feedback]
@@ -132,7 +132,7 @@ title GRAPHIC DESIGN
 
 
 flowchart TD
-title RECIEVING
+subgraph RECIEVING
     C1[Order Placement and Notification]
     C2[Receiving Shipment]
     C3[Inspection and Quality Control]
@@ -156,7 +156,7 @@ title RECIEVING
 
 
 flowchart TD
-title SCREEN PRINTING
+subgraph SCREEN PRINTING
     D1[Order Reception]
     D2[Material Collection]
     D3[Screen Preparation]
@@ -183,7 +183,7 @@ title SCREEN PRINTING
 
 
 flowchart TD
-title EMBROIDERY
+subgraph EMBROIDERY
     F1[Order Reception]
     F2[Material Collection]
     F3[Design Setup]
@@ -205,7 +205,7 @@ title EMBROIDERY
 
 
 flowchart TD
-title HEAT-TRANSFER
+subgraph HEAT-TRANSFER
     G1[Order Reception]
     G2[Material Collection]
     G3[Design Setup]
@@ -228,7 +228,7 @@ title HEAT-TRANSFER
 
 
 flowchart TD
-title FULFILLMENT
+subgraph FULFILLMENT
     H1[Order Reception]
     H2[Packaging Preparation]
     H3[Item Packaging]
