@@ -116,7 +116,8 @@ flowchart TD
 GRAPHIC DESIGN WORKFLOW
 ```mermaid
 flowchart TD
-    E1[Design Request Reception]
+    E-0[Design request for filed out buy client on website]
+    E1[Design Request Reception by manager]
     E2[Initial Design Variations]
     E3[Client Feedback]
     E4[Design Finalization]
@@ -126,6 +127,7 @@ flowchart TD
     E6[Final Approval]
     E7[Design Delivery]
 
+    E0 --> E1
     E1 --> E2
     E2 --> E3
     E3 --> E4
