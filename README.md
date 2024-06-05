@@ -25,6 +25,9 @@ flowchart TD
     I6 -->|No| I1
     I7 --> I8
 
+```
+
+```mermaid
 
 flowchart TD
 subgraph SALES
@@ -77,8 +80,9 @@ subgraph SALES
     A5f -->|No| A5g
     A5g --> A5h
 
+```
 
-
+```mermaid
 flowchart TD
 subgraph DIGITAL AGENCY
     B1[Project Initiation]
@@ -107,7 +111,8 @@ subgraph DIGITAL AGENCY
     B7 --> B8
 
 
-
+```
+```mermaid
 flowchart TD
 subgraph GRAPHIC DESIGN
     E1[Design Request Reception]
@@ -130,7 +135,9 @@ subgraph GRAPHIC DESIGN
     E5b --> E4
     E6 --> E7
 
+```
 
+```mermaid
 flowchart TD
 subgraph RECIEVING
     C1[Order Placement and Notification]
@@ -154,7 +161,9 @@ subgraph RECIEVING
     C6 --> C7
     C7 --> C8
 
+```
 
+```mermaid
 flowchart TD
 subgraph SCREEN PRINTING
     D1[Order Reception]
@@ -180,7 +189,9 @@ subgraph SCREEN PRINTING
     D7b --> D5
     D8 --> D9
 
+```
 
+```mermaid
 
 flowchart TD
 subgraph EMBROIDERY
@@ -203,6 +214,10 @@ subgraph EMBROIDERY
     F5b --> F4
     F6 --> F7
 
+```
+
+
+```mermaid
 
 flowchart TD
 subgraph HEAT-TRANSFER
@@ -225,7 +240,9 @@ subgraph HEAT-TRANSFER
     G5b --> G4
     G6 --> G7
 
+```
 
+```mermaid
 
 flowchart TD
 subgraph FULFILLMENT
