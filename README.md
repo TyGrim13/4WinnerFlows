@@ -4,7 +4,6 @@ Workflows ERP Docs
 ```mermaid
 
 flowchart TD=
-title NOTIFICATIONS
 
 title OVERDUE TASK
     I1[Task Due Date]
