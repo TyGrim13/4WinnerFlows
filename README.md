@@ -1,7 +1,7 @@
 # 4WinnerFlows
 Workflows ERP Docs
 
-  % OVERDUE TASK %
+  OVERDUE TASKS NOTIFICATION
 
 ```mermaid
 
@@ -27,11 +27,10 @@ flowchart TD
     I7 --> I8
 
 ```
-
+SALES WORKFLOW
 ```mermaid
 
 flowchart TD
-subgraph SALES
     A1[Lead Generation]
     A2[Initial Contact Follow-Up Date]
     A3{Check Contact Made by Follow-Up Date}
@@ -83,9 +82,9 @@ subgraph SALES
 
 ```
 
+DIGITAL AGENCY WORKFLOW
 ```mermaid
 flowchart TD
-subgraph DIGITAL AGENCY
     B1[Project Initiation]
     B2[Project Planning]
     B3[Task Assignment]
@@ -113,9 +112,10 @@ subgraph DIGITAL AGENCY
 
 
 ```
+
+GRAPHIC DESIGN WORKFLOW
 ```mermaid
 flowchart TD
-subgraph GRAPHIC DESIGN
     E1[Design Request Reception]
     E2[Initial Design Variations]
     E3[Client Feedback]
@@ -138,9 +138,10 @@ subgraph GRAPHIC DESIGN
 
 ```
 
+RECIEVING WORKFLOW
 ```mermaid
 flowchart TD
-subgraph RECIEVING
+
     C1[Order Placement and Notification]
     C2[Receiving Shipment]
     C3[Inspection and Quality Control]
@@ -164,9 +165,9 @@ subgraph RECIEVING
 
 ```
 
+SCREEN PRINTING WORKFLOW
 ```mermaid
 flowchart TD
-subgraph SCREEN PRINTING
     D1[Order Reception]
     D2[Material Collection]
     D3[Screen Preparation]
@@ -191,11 +192,9 @@ subgraph SCREEN PRINTING
     D8 --> D9
 
 ```
-
+EMBROIDERY WORKFLOW
 ```mermaid
-
 flowchart TD
-subgraph EMBROIDERY
     F1[Order Reception]
     F2[Material Collection]
     F3[Design Setup]
@@ -217,11 +216,9 @@ subgraph EMBROIDERY
 
 ```
 
-
+HEAT-TRANSFER WORKFLOW
 ```mermaid
-
 flowchart TD
-subgraph HEAT-TRANSFER
     G1[Order Reception]
     G2[Material Collection]
     G3[Design Setup]
@@ -243,10 +240,9 @@ subgraph HEAT-TRANSFER
 
 ```
 
+FULFILLMENT WORKFLOW
 ```mermaid
-
 flowchart TD
-subgraph FULFILLMENT
     H1[Order Reception]
     H2[Packaging Preparation]
     H3[Item Packaging]
