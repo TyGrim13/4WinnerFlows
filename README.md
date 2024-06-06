@@ -413,7 +413,7 @@ flowchart TD
     D5[Printing]
     D6[Drying]
     D7[Quality Check]
-    D7a{Rework Needed]
+    D7a{Rework Needed}
     D7b[Rework Process]
     D8[Packaging and Fulfillment]
     D9[Damages Report]
@@ -461,7 +461,7 @@ flowchart TD
     F3[Design Setup]
     F4[Embroidery Process Start Timer]
     F5[Quality Check]
-    F5a{Rework Needed]
+    F5a{Rework Needed}
     F5b[Rework Process]
     F6[Packaging and Fulfillment]
     F7[Damages Report]
@@ -482,6 +482,7 @@ flowchart TD
     F8 --> F9
     F5b --> F4
     F6
+
 
 
 ```
@@ -507,7 +508,7 @@ flowchart TD
     G3[Design Setup]
     G4[Vinyl Heat Press Process Start Timer]
     G5[Quality Check]
-    G5a{Rework Needed]
+    G5a{Rework Needed}
     G5b[Rework Process]
     G6[Packaging and Fulfillment]
 
@@ -522,8 +523,6 @@ flowchart TD
     G5a -->|No| G6
     G5b --> G4
     G6
-
-
 
 
 ```
@@ -555,7 +554,7 @@ flowchart TD
     H2[Packaging Preparation]
     H3[Item Packaging]
     H4[Quality Assurance Check]
-    H4a{Reproduction Needed]
+    H4a{Reproduction Needed}
     H4b[Reproduction Process]
     H5[Shipping Preparation]
     H6[Shipping and Dispatch]
@@ -563,7 +562,7 @@ flowchart TD
     H8[Order Completion]
     H9[Returns Handling]
     H10[Returns Inspection]
-    H10a{Reproduction Needed]
+    H10a{Reproduction Needed}
     H10b[Reproduction Process]
     H11[Communicate with Customer]
 
@@ -586,7 +585,6 @@ flowchart TD
     H10a -->|No| H11
     H10b --> H2
     H11
-
 
 
 ```
