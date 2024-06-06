@@ -1,6 +1,20 @@
 # 4WinnerFlows
 Workflows ERP
 
+# Table of Contents
+1. [Hierarchy Structure](#hierarchy-structure)
+2. [Overdue Tasks Notification](#overdue-tasks-notification)
+3. [Sales Workflow](#sales-workflow)
+4. [Digital Agency Workflow](#digital-agency-workflow)
+5. [Graphic Design Workflow](#graphic-design-workflow)
+6. [Receiving/Inventory Workflow](#receivinginventory-workflow)
+7. [Screen Printing Workflow](#screen-printing-workflow)
+8. [Embroidery Workflow](#embroidery-workflow)
+9. [Heat Transfer Workflow](#heat-transfer-workflow)
+10. [Fulfillment Workflow](#fulfillment-workflow)
+11. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
+
+
 Hierarchy Structure
 CEO: Tom is the Chief Executive Officer who oversees all departments.
 
