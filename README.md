@@ -180,10 +180,18 @@ SALES WORKFLOW
 
 ```mermaid
 
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef manager fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+    classDef supervisor fill:#c8e6c9,stroke:#43a047,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+    classDef team fill:#fff3e0,stroke:#fb8c00,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef ceo fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,color:#333,font-family:'Arial',font-size:16px,font-weight:bold,rx:5,ry:5;
+
     A1[Lead Generation]
-    A2[Initial Contact FollowUp Date]
-    A3{Check Contact Made by FollowUp Date}
+    A2[Initial Contact Follow-Up Date]
+    A3{Check Contact Made by Follow-Up Date}
     A3a[Contact Made]
     A3b[No Contact Made]
     A3c[Notify Sales Rep]
@@ -191,7 +199,7 @@ flowchart TD
     A3e[No Contact Made in 3 Days]
     A3f[Notify Sales Manager]
     A4[Lead Status Update]
-    A4a[Send Next FollowUp]
+    A4a[Send Next Follow-Up]
     A4b[Lead Conversion]
     A4c[Notify Sales Manager]
     A4d[Update CRM System]
