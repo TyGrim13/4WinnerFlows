@@ -769,7 +769,7 @@ flowchart TD
 [Back to top](#TOP)
 
 
-## HEATTRANSFER WORKFLOW
+## HEAT TRANSFER WORKFLOW
 
 1. Order Reception: Orders are received.
 2. Material Collection: Materials required for the order are collected.
