@@ -7,17 +7,18 @@ This document serves as a comprehensive guide to understanding the various workf
 1. [Hierarchy Structure](#hierarchy-structure)
 2. [Accounting Workflow](#accounting-workflow)
 3. [Overdue Tasks Notification](#overdue-tasks-notification)
-4. [Sales Workflow](#sales-workflow)
-5. [Digital Agency Workflow](#digital-agency-workflow)
-6. [Graphic Design Workflow](#graphic-design-workflow)
-7. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
-8. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
-9. [Shopify Orders Workflow](#shopify-orders-workflow)
-10. [Screen Printing Workflow](#screen-printing-workflow)
-11. [Embroidery Workflow](#embroidery-workflow)
-12. [Heat Transfer Workflow](#heat-transfer-workflow)
-13. [Fulfillment Workflow](#fulfillment-workflow)
-14. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
+4. [Client Onboarding Workflow](#client-onboarding-workflow)
+5. [Sales Workflow](#sales-workflow)
+6. [Digital Agency Workflow](#digital-agency-workflow)
+7. [Graphic Design Workflow](#graphic-design-workflow)
+8. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
+9. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
+10. [Shopify Orders Workflow](#shopify-orders-workflow)
+11. [Screen Printing Workflow](#screen-printing-workflow)
+12. [Embroidery Workflow](#embroidery-workflow)
+13. [Heat Transfer Workflow](#heat-transfer-workflow)
+14. [Fulfillment Workflow](#fulfillment-workflow)
+15. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
 
 ## Hierarchy Structure
 CEO: Tom is the Chief Executive Officer who oversees all departments.
@@ -304,6 +305,78 @@ flowchart TD
     I6 -->|Yes| I7
     I6 -->|No| I1
     I7 --> I8
+
+
+```
+[Back to top](#TOP)
+
+## Client Onboarding Workflow
+
+1. Sale Closed
+    The sales process is completed, and a sale is made.
+
+2. Send Welcome Email
+    A welcome email is sent to the new client to initiate the onboarding process.
+
+3. Schedule 6090 Minute Meeting
+    Schedule a detailed meeting with the client to discuss the project and gather necessary information.
+
+4. Gather Client Information
+    Collect all relevant information about the client's business, including styles, color palettes, fonts, and images.
+
+5. Fill Out All Necessary Forms
+    Complete all required forms to formalize the project details and requirements.
+
+6. Sign Terms and Conditions
+    Ensure that the client signs all terms and conditions to proceed with the project.
+
+7. Begin Process
+    Start the project process by organizing and planning the required tasks.
+
+8. Send Emails Along Each Step
+    Communicate with the client regularly by sending emails at each step of the process to keep them informed.
+
+9. 30 Days Setup Time for Departments
+    Allocate approximately 30 days for each department to gather information, create mockups, and prepare for approvals.
+
+10. Start Mocking Up Designs
+     Begin creating design mockups based on the gathered information.
+
+11. Get Approvals
+     Obtain necessary approvals from the client to proceed with the final design and implementation.
+
+```mermaid
+
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
+flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+
+    SaleClosed["Sale Closed"]
+    WelcomeEmail["Send Welcome Email"]
+    ScheduleMeeting["Schedule 60-90 Minute Meeting"]
+    GatherInfo["Gather Client Information"]
+    BusinessDetails["Business Styles, Color Palettes, Fonts, Images"]
+    FillForms["Fill Out All Necessary Forms"]
+    SignTerms["Sign Terms and Conditions"]
+    StartProcess["Begin Process"]
+    EmailSteps["Send Emails Along Each Step"]
+    SetUpTime["30 Days Setup Time for Departments"]
+    Mockups["Start Mocking Up Designs"]
+    GetApprovals["Get Approvals"]
+
+    SaleClosed --> WelcomeEmail
+    WelcomeEmail --> ScheduleMeeting
+    ScheduleMeeting --> GatherInfo
+    GatherInfo --> BusinessDetails
+    BusinessDetails --> FillForms
+    FillForms --> SignTerms
+    SignTerms --> StartProcess
+    StartProcess --> EmailSteps
+    EmailSteps --> SetUpTime
+    SetUpTime --> Mockups
+    Mockups --> GetApprovals
+
 
 
 ```
