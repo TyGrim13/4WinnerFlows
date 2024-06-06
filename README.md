@@ -26,21 +26,9 @@ Quality Control is supervised by Juana.
 Fulfillment/Shipping is supervised by Danale.
 
 ```mermaid
-flowchart TD
-    CEO[Tom] & Eric
-    SalesDept[Sales Department]
-    SalesMgr[Manager: Julie]
-    Enzo[Enzo]
-    Epsteine[Epsteine]
-    TomAsSales[Tom as CEO and Sales]
-    CEO --> SalesDept
-    SalesDept --> SalesMgr
-    SalesMgr --> Enzo
-    SalesMgr --> Epsteine
-    SalesMgr --> TomAsSales
 
 flowchart TD
-    CEO[Tom]
+    CEO[Tom] & Eric
     SalesDept[Sales Department]
     SalesMgr[Manager: Julie]
     Enzo[Enzo]
