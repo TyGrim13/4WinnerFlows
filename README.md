@@ -27,8 +27,17 @@ Fulfillment/Shipping is supervised by Danale.
 
 ```mermaid
 
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
-    CEO[Tom] & Eric
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px;
+    classDef manager fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold;
+    classDef supervisor fill:#c8e6c9,stroke:#43a047,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold;
+    classDef team fill:#fff3e0,stroke:#fb8c00,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px;
+    classDef ceo fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,color:#333,font-family:'Arial',font-size:16px,font-weight:bold;
+
+    CEO[Tom]
+    class CEO ceo
     SalesDept[Sales Department]
     SalesMgr[Manager: Julie]
     Enzo[Enzo]
@@ -39,6 +48,9 @@ flowchart TD
     SalesMgr --> Enzo
     SalesMgr --> Epsteine
     SalesMgr --> TomAsSales
+
+    class SalesDept,SalesMgr manager
+    class Enzo,Epsteine,TomAsSales team
 
     DigitalAgency[Digital Agency Department]
     DigitalMgr[Manager: Ty]
@@ -61,13 +73,17 @@ flowchart TD
     GDSup --> Alex
     GDSup --> Roselle
 
+    class DigitalAgency,DigitalMgr manager
+    class WebDev,Marketing,GraphicDesign supervisor
+    class Alex,Roselle team
+
     Manufacturing[Manufacturing Department]
     ManuMgr[Manager: Dave]
     Receiving[Receiving]
-    RecSup[Supervisor: Assigned by Dave]
+    RecSup[Supervisor: Not specified]
     ScreenPrinting[Screen Printing]
-    SP[Supervisor: TJ]
-    SPBrandon[Brandon]
+    SP[Supervisor: Brandon]
+    SPTJ[TJ]
     SPJuana[Juana]
     SPLeni[Leni]
     Embroidery[Embroidery]
@@ -76,7 +92,7 @@ flowchart TD
     VinylHeatPress[Vinyl Heat Press]
     VHP[Supervisor: Otero]
     QualityControl[Quality Control]
-    QCSup[Supervisor: Juana]
+    QCSup[Supervisor: Not specified]
     FulfillmentShipping[Fulfillment/Shipping]
     FulfillSup[Supervisor: Danale]
     CEO --> Manufacturing
@@ -85,7 +101,7 @@ flowchart TD
     Receiving --> RecSup
     ManuMgr --> ScreenPrinting
     ScreenPrinting --> SP
-    SP --> SPBrandon
+    SP --> SPTJ
     SP --> SPJuana
     SP --> SPLeni
     ManuMgr --> Embroidery
@@ -97,6 +113,11 @@ flowchart TD
     QualityControl --> QCSup
     ManuMgr --> FulfillmentShipping
     FulfillmentShipping --> FulfillSup
+
+    class Manufacturing,ManuMgr manager
+    class Receiving,ScreenPrinting,Embroidery,VinylHeatPress,QualityControl,FulfillmentShipping supervisor
+    class SPTJ,SPJuana,SPLeni,Emily team
+
 
 
 ```
