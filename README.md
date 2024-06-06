@@ -10,12 +10,13 @@ This document serves as a comprehensive guide to understanding the various workf
 4. [Digital Agency Workflow](#digital-agency-workflow)
 5. [Graphic Design Workflow](#graphic-design-workflow)
 6. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
-7. [Shopify Orders Workflow](#shopify-orders-workflow)
-8. [Screen Printing Workflow](#screen-printing-workflow)
-9. [Embroidery Workflow](#embroidery-workflow)
-10. [Heat Transfer Workflow](#heat-transfer-workflow)
-11. [Fulfillment Workflow](#fulfillment-workflow)
-12. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
+7. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
+8. [Shopify Orders Workflow](#shopify-orders-workflow)
+9. [Screen Printing Workflow](#screen-printing-workflow)
+10. [Embroidery Workflow](#embroidery-workflow)
+11. [Heat Transfer Workflow](#heat-transfer-workflow)
+12. [Fulfillment Workflow](#fulfillment-workflow)
+13. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
 
 ## Hierarchy Structure
 CEO: Tom is the Chief Executive Officer who oversees all departments.
@@ -404,6 +405,51 @@ flowchart TD
 
 ```
 [Back to top](#TOP)
+
+## AUTOMATED PURCHASE ORDER WORKFLOW
+
+```mermaid
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
+flowchart TD
+  classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+
+  OrderReceived["Order Received"]
+  CollectDetails["Collect Customer & Order Details"]
+  CheckInventory["Check Inventory"]
+  PackageShip["Package and Ship"]
+  AllocateItems["Allocate Items to Departments"]
+  Embroidery["Embroidery"]
+  ScreenPrinting["Screen Printing"]
+  VinylHeatPress["Vinyl Heat Press"]
+  OrderFulfilled["Order Fulfilled"]
+  CreatePO["Create Purchase Order"]
+  ReceivePO["Receive Purchase Order"]
+  CheckLowInventory["Check for Low Inventory"]
+  NotifyCEO["Notify CEO for Purchase Confirmation"]
+  ConfirmPurchase["Confirm Purchase of Goods"]
+
+  OrderReceived -->|"Collect Details"| CollectDetails
+  CollectDetails -->|"Check Inventory"| CheckInventory
+  CheckInventory -->|"In Stock"| PackageShip
+  CheckInventory -->|"Out of Stock or Low Stock"| CreatePO
+  CreatePO --> NotifyCEO
+  NotifyCEO --> ConfirmPurchase
+  ConfirmPurchase --> ReceivePO
+  ReceivePO --> AllocateItems
+  AllocateItems -->|"Embroidery"| Embroidery
+  AllocateItems -->|"Screen Printing"| ScreenPrinting
+  AllocateItems -->|"Vinyl Heat Press"| VinylHeatPress
+  Embroidery -->|"Complete"| OrderFulfilled
+  ScreenPrinting -->|"To Embroidery"| Embroidery
+  ScreenPrinting -->|"To Vinyl Heat Press"| VinylHeatPress
+  VinylHeatPress -->|"To Embroidery"| Embroidery
+  VinylHeatPress -->|"Complete"| OrderFulfilled
+  OrderFulfilled -->|"Package & Ship"| PackageShip
+
+  class OrderReceived,CollectDetails,CheckInventory,PackageShip,AllocateItems,Embroidery,ScreenPrinting,VinylHeatPress,OrderFulfilled,CreatePO,ReceivePO,CheckLowInventory,NotifyCEO,ConfirmPurchase default
+
+```
 
 ## SHOPIFY ORDERS WORKFLOW
 
