@@ -293,8 +293,16 @@ GRAPHIC DESIGN WORKFLOW
 6. Final Approval: The final design is approved by the client.
 7. Design Delivery: The approved design is delivered to the client.
 ```mermaid
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
-    E0[Design request for filed out buy client on website]
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef manager fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+    classDef supervisor fill:#c8e6c9,stroke:#43a047,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+    classDef team fill:#fff3e0,stroke:#fb8c00,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef ceo fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,color:#333,font-family:'Arial',font-size:16px,font-weight:bold,rx:5,ry:5;
+
+    E0[Design request for filed out by client on website]
     E1[Design Request Reception by manager]
     E2[Initial Design Variations]
     E3[Client Feedback]
@@ -315,6 +323,7 @@ flowchart TD
     E5a -->|No| E6
     E5b --> E4
     E6 --> E7
+
 
 ```
 
