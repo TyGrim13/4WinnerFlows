@@ -43,6 +43,16 @@ flowchart TD
 
 ```
 SALES WORKFLOW
+1. Project Initiation: The project begins with initiation.
+2. Project Planning: Detailed planning of the project occurs.
+3. Task Assignment: Tasks are assigned to team members.
+4. Task Execution: Team members execute the assigned tasks.
+5. Quality Assurance: The quality of the tasks is assured.
+   · Client Approval: The client reviews the deliverables.
+      · Revisions Needed: If revisions are needed, they are made and tasks are executed again.
+6. Project Completion: The project is completed.
+7. Project Delivery: The project deliverables are handed over to the client.
+8. Post-Project Review: A review of the project is conducted to identify lessons learned.
 ```mermaid
 
 flowchart TD
