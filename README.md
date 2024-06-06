@@ -128,6 +128,7 @@ flowchart TD
     ManuMgr --> Embroidery
     Embroidery --> EmbSup
     EmbSup --> Emily
+    EmbSup --> Leni
     ManuMgr --> VinylHeatPress
     VinylHeatPress --> VHP
     ManuMgr --> QualityControl
