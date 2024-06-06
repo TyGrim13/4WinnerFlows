@@ -137,7 +137,7 @@ flowchart TD
 
 
 
-OVERDUE TASKS NOTIFICATION
+## OVERDUE TASKS NOTIFICATION
 
  Notification Flowchart for Overdue Tasks
 1. Task Due Date: The due date for the task is set.
@@ -179,7 +179,7 @@ flowchart TD
 
 
 ```
-SALES WORKFLOW
+## SALES WORKFLOW
 
 1. Lead Generation: The process starts with generating leads through various marketing and outreach efforts.
 2. Initial Contact FollowUp Date: A followup date is set for the initial contact with the lead.
@@ -258,7 +258,7 @@ flowchart TD
 
 ```
 
-DIGITAL AGENCY WORKFLOW
+## DIGITAL AGENCY WORKFLOW
 
 1. Project Initiation: The project begins with initiation.
 2. Project Planning: Detailed planning of the project occurs.
@@ -307,7 +307,7 @@ flowchart TD
 
 ```
 
-GRAPHIC DESIGN WORKFLOW
+## GRAPHIC DESIGN WORKFLOW
 
 1. Design Request Reception: Design requests are received.
 2. Initial Design Variations: Initial design variations are created.
@@ -352,7 +352,7 @@ flowchart TD
 
 ```
 
-RECIEVING/INVENTORY WORKFLOW
+## RECIEVING/INVENTORY WORKFLOW
 
 1. Order Placement and Notification: Orders are placed and notifications are sent.
 2. Receiving Shipment: The shipment is received.
@@ -399,7 +399,7 @@ flowchart TD
 
 ```
 
-SHOPIFY ORDERS WORKFLOW
+## SHOPIFY ORDERS WORKFLOW
 
 1. Order Received: The order is received from the client's Shopify store.
 2. Collect Customer & Order Details: The system collects the company name, customer name, and shipping address.
@@ -448,7 +448,7 @@ flowchart TD
 
 ```
 
-SCREEN PRINTING WORKFLOW
+## SCREEN PRINTING WORKFLOW
 
 1. Order Reception: Orders are received.
 2. Material Collection: Materials required for the order are collected.
@@ -500,7 +500,7 @@ flowchart TD
 
 
 ```
-EMBROIDERY WORKFLOW
+## EMBROIDERY WORKFLOW
 
 1. Order Reception: Orders are received.
 2. Material Collection: Materials required for the order are collected.
@@ -548,7 +548,7 @@ flowchart TD
 
 ```
 
-HEATTRANSFER WORKFLOW
+## HEATTRANSFER WORKFLOW
 
 1. Order Reception: Orders are received.
 2. Material Collection: Materials required for the order are collected.
@@ -588,7 +588,7 @@ flowchart TD
 
 ```
 
-FULFILLMENT WORKFLOW
+## FULFILLMENT WORKFLOW
 
 1. Order Reception: Orders are received.
 2. Packaging Preparation: Packaging is prepared.
@@ -650,7 +650,7 @@ flowchart TD
 
 ```
 
-CLOSING SALES & COMMISSION PAYOUT FLOW
+## CLOSING SALES & COMMISSION PAYOUT FLOW
 
 1. Deal Closed by Salesperson: The salesperson closes the deal with the client.
 2. Client Signs All Documents and Terms: The client signs all necessary documents and terms.
