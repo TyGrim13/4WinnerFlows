@@ -390,7 +390,12 @@ SCREEN PRINTING WORKFLOW
 8. Packaging and Fulfillment: Items are packaged and fulfilled.
 
 ```mermaid
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef decision fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+
     D1[Order Reception]
     D2[Material Collection]
     D3[Screen Preparation]
@@ -398,12 +403,14 @@ flowchart TD
     D5[Printing]
     D6[Drying]
     D7[Quality Check]
-    D7a{Rework Needed}
+    D7a{Rework Needed]
     D7b[Rework Process]
     D8[Packaging and Fulfillment]
     D9[Damages Report]
     D10[Update Inventory]
     D11[Account for Tax Write-Off]
+
+    class D7a decision
 
     D1 --> D2
     D2 --> D3
@@ -420,6 +427,7 @@ flowchart TD
     D7b --> D5
     D8
 
+
 ```
 EMBROIDERY WORKFLOW
 
@@ -432,18 +440,25 @@ EMBROIDERY WORKFLOW
 6. Packaging and Fulfillment: Embroidered items are packaged and fulfilled.
 7. 
 ```mermaid
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef decision fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+
     F1[Order Reception]
     F2[Material Collection]
     F3[Design Setup]
     F4[Embroidery Process Start Timer]
     F5[Quality Check]
-    F5a{Rework Needed}
+    F5a{Rework Needed]
     F5b[Rework Process]
     F6[Packaging and Fulfillment]
     F7[Damages Report]
     F8[Update Inventory]
     F9[Account for Tax Write-Off]
+
+    class F5a decision
 
     F1 --> F2
     F2 --> F3
@@ -459,7 +474,6 @@ flowchart TD
     F6
 
 
-
 ```
 
 HEATTRANSFER WORKFLOW
@@ -472,16 +486,22 @@ HEATTRANSFER WORKFLOW
     Rework Needed: If rework is needed, the items are sent back for rework.
 6. Packaging and Fulfillment: Heatpressed items are packaged and fulfilled.
 ```mermaid
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
-    %% Vinyl Heat Press Department Flowchart %%
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef decision fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+
     G1[Order Reception]
     G2[Material Collection]
     G3[Design Setup]
     G4[Vinyl Heat Press Process Start Timer]
     G5[Quality Check]
-    G5a{Rework Needed}
+    G5a{Rework Needed]
     G5b[Rework Process]
     G6[Packaging and Fulfillment]
+
+    class G5a decision
 
     G1 --> G2
     G2 --> G3
@@ -492,6 +512,7 @@ flowchart TD
     G5a -->|No| G6
     G5b --> G4
     G6
+
 
 
 
@@ -514,12 +535,17 @@ FULFILLMENT WORKFLOW
 11. Communicate with Customer: Communication is maintained with the customer.
     
 ```mermaid
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef decision fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+
     H1[Order Reception]
     H2[Packaging Preparation]
     H3[Item Packaging]
     H4[Quality Assurance Check]
-    H4a{Reproduction Needed}
+    H4a{Reproduction Needed]
     H4b[Reproduction Process]
     H5[Shipping Preparation]
     H6[Shipping and Dispatch]
@@ -527,9 +553,11 @@ flowchart TD
     H8[Order Completion]
     H9[Returns Handling]
     H10[Returns Inspection]
-    H10a{Reproduction Needed}
+    H10a{Reproduction Needed]
     H10b[Reproduction Process]
     H11[Communicate with Customer]
+
+    class H4a,H10a decision
 
     H1 --> H2
     H2 --> H3
@@ -547,7 +575,8 @@ flowchart TD
     H10a -->|Yes| H10b
     H10a -->|No| H11
     H10b --> H2
-    H11 --> H12
+    H11
+
 
 
 ```
@@ -566,7 +595,12 @@ CLOSING SALES & COMMISSION PAYOUT FLOW
 8. Send Documents Back to Salesperson for Completion: If documents are not approved, they are sent back to the salesperson for completion and resubmission.
 
 ```mermaid
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef decision fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+
     A1[Deal Closed by Salesperson]
     A2[Client Signs All Documents and Terms]
     A3[Receive Necessary Documents and Logo Files from Client]
@@ -578,6 +612,8 @@ flowchart TD
     A7[Commission Paid Out within Specified Time]
     A8[Send Documents Back to Salesperson for Completion]
 
+    class A5 decision
+
     A1 --> A2
     A2 --> A3
     A3 --> A4
@@ -588,6 +624,7 @@ flowchart TD
     A6 --> A7
     A5b --> A8
     A8 --> A4
+
 
 
 ```
