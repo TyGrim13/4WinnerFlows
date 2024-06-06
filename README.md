@@ -354,6 +354,7 @@ RECIEVING/INVENTORY WORKFLOW
 
 ```mermaid
 
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
 
 flowchart TD
     classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
@@ -362,12 +363,26 @@ flowchart TD
     C1[Order Placement and Notification]
     C2[Receiving Shipment]
     C3[Inspection and Quality Control]
-    C3a{Items Fail Inspection]
+    C3a{Items Fail Inspection}
     C3b[Return to Supplier/Mark for Rework]
     C4[Inventory Update]
     C5[Storage Allocation]
     C6[Put-Away Process]
     C7[Inventory Tracking]
+    C8[Order Fulfillment]
+
+    class C3a decision
+
+    C1 --> C2
+    C2 --> C3
+    C3 --> C3a
+    C3a -->|Yes| C3b
+    C3a -->|No| C4
+    C4 --> C5
+    C5 --> C6
+    C6 --> C7
+    C7 --> C8
+
 
 
 ```
