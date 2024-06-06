@@ -9,10 +9,10 @@ OVERDUE TASKS NOTIFICATION
  Notification Flowchart for Overdue Tasks
 1. Task Due Date: The due date for the task is set.
 2. Check if Task is Past Due:
-   · Task is Past Due: If the task is past due, a notification is sent to the supervisor and manager.
+   - Task is Past Due: If the task is past due, a notification is sent to the supervisor and manager.
 3. Monitor Task Status: The task status is monitored.
 4. Check if Task is Overdue for 3 Days:
-   · Task is Overdue for 3 Days: If the task is overdue for three days, a notification is sent to the supervisor, manager, and CEO.
+   - Task is Overdue for 3 Days: If the task is overdue for three days, a notification is sent to the supervisor, manager, and CEO.
 
 
 ```mermaid
