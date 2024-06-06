@@ -2,6 +2,79 @@
 Workflows ERP
 
 
+mermaid'''
+flowchart TD
+    CEO[Tom]
+    SalesDept[Sales Department]
+    SalesMgr[Manager: Julie]
+    Enzo[Enzo]
+    Epsteine[Epsteine]
+    Tom2[Tom (also CEO)]
+    CEO --> SalesDept
+    SalesDept --> SalesMgr
+    SalesMgr --> Enzo
+    SalesMgr --> Epsteine
+    SalesMgr --> Tom2
+
+    DigitalAgency[Digital Agency Department]
+    DigitalMgr[Manager: Ty]
+    WebDev[Web Development]
+    WebSup[Supervisor: Ty]
+    Marketing[Marketing]
+    MarkSup[Supervisor: Luis]
+    GraphicDesign[Graphic Design]
+    GDSup[Supervisor: Jordan]
+    Alex[Alex]
+    Roselle[Roselle]
+    CEO --> DigitalAgency
+    DigitalAgency --> DigitalMgr
+    DigitalMgr --> WebDev
+    WebDev --> WebSup
+    DigitalMgr --> Marketing
+    Marketing --> MarkSup
+    DigitalMgr --> GraphicDesign
+    GraphicDesign --> GDSup
+    GDSup --> Alex
+    GDSup --> Roselle
+
+    Manufacturing[Manufacturing Department]
+    ManuMgr[Manager: Dave]
+    Receiving[Receiving]
+    RecSup[Supervisor: Not specified]
+    ScreenPrinting[Screen Printing]
+    SPBrandon[Supervisor: Brandon]
+    SPTJ[TJ]
+    SPJuana[Juana]
+    SPLeni[Leni]
+    Embroidery[Embroidery]
+    EmbSup[Supervisor: Jessica]
+    Emily[Emily]
+    VinylHeatPress[Vinyl Heat Press]
+    VHP[Supervisor: Otero]
+    QualityControl[Quality Control]
+    QCSup[Supervisor: Not specified]
+    FulfillmentShipping[Fulfillment/Shipping]
+    FulfillSup[Supervisor: Danale]
+    CEO --> Manufacturing
+    Manufacturing --> ManuMgr
+    ManuMgr --> Receiving
+    Receiving --> RecSup
+    ManuMgr --> ScreenPrinting
+    ScreenPrinting --> SPBrandon
+    SPBrandon --> SPTJ
+    SPBrandon --> SPJuana
+    SPBrandon --> SPLeni
+    ManuMgr --> Embroidery
+    Embroidery --> EmbSup
+    EmbSup --> Emily
+    ManuMgr --> VinylHeatPress
+    VinylHeatPress --> VHP
+    ManuMgr --> QualityControl
+    QualityControl --> QCSup
+    ManuMgr --> FulfillmentShipping
+    FulfillmentShipping --> FulfillSup
+'''
+
 
 
 OVERDUE TASKS NOTIFICATION
@@ -236,6 +309,7 @@ SCREEN PRINTING WORKFLOW
 7. Quality Check: Quality of the printed items is checked.
     Rework Needed: If rework is needed, the items are sent back for rework.
 8. Packaging and Fulfillment: Items are packaged and fulfilled.
+
 ```mermaid
 flowchart TD
     D1[Order Reception]
@@ -248,6 +322,9 @@ flowchart TD
     D7a{Rework Needed}
     D7b[Rework Process]
     D8[Packaging and Fulfillment]
+    D9[Damages Report]
+    D10[Update Inventory]
+    D11[Account for Tax Write-Off]
 
     D1 --> D2
     D2 --> D3
@@ -258,8 +335,11 @@ flowchart TD
     D7 --> D7a
     D7a -->|Yes| D7b
     D7a -->|No| D8
+    D7a -->|Damaged| D9
+    D9 --> D10
+    D10 --> D11
     D7b --> D5
-    D8 --> D9
+    D8
 
 ```
 EMBROIDERY WORKFLOW
@@ -271,6 +351,7 @@ EMBROIDERY WORKFLOW
 5. Quality Check: The quality of the embroidered items is checked.
     Rework Needed: If rework is needed, the items are sent back for rework.
 6. Packaging and Fulfillment: Embroidered items are packaged and fulfilled.
+7. 
 ```mermaid
 flowchart TD
     F1[Order Reception]
@@ -281,6 +362,9 @@ flowchart TD
     F5a{Rework Needed}
     F5b[Rework Process]
     F6[Packaging and Fulfillment]
+    F7[Damages Report]
+    F8[Update Inventory]
+    F9[Account for Tax Write-Off]
 
     F1 --> F2
     F2 --> F3
@@ -289,8 +373,12 @@ flowchart TD
     F5 --> F5a
     F5a -->|Yes| F5b
     F5a -->|No| F6
+    F5a -->|Damaged| F7
+    F7 --> F8
+    F8 --> F9
     F5b --> F4
     F6
+
 
 
 ```
