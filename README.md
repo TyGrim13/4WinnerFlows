@@ -57,7 +57,7 @@ flowchart TD
     CEO[Tom]
     class CEO ceo
     SalesDept[Sales Department]
-    SalesMgr[Manager: Julie]
+    SalesMgr[HEAD OF DEPARTMENT: Julie]
     Enzo[Enzo]
     Epsteine[Epsteine]
     TomAsSales[Tom as CEO and Sales]
@@ -71,13 +71,13 @@ flowchart TD
     class Enzo,Epsteine,TomAsSales team
 
     DigitalAgency[Digital Agency Department]
-    DigitalMgr[Manager: Ty]
+    DigitalMgr[HEAD OF DEPARTMENT: Ty]
     WebDev[Web Development]
-    WebSup[Supervisor: Ty]
+    WebSup[MANAGER: Ty]
     Marketing[Marketing]
-    MarkSup[Supervisor: Luis]
+    MarkSup[MANAGER: Luis]
     GraphicDesign[Graphic Design]
-    GDSup[Supervisor: Jordan]
+    GDSup[MANAGER: Jordan]
     Alex[Alex]
     Roselle[Roselle]
     CEO --> DigitalAgency
@@ -96,23 +96,23 @@ flowchart TD
     class Alex,Roselle team
 
     Manufacturing[Manufacturing Department]
-    ManuMgr[Manager: Dave]
+    ManuMgr[HEAD OF DEPARTMENT: Dave]
     Receiving[Receiving]
-    RecSup[Supervisor: Not specified]
+    RecSup[MANAGER: Not specified]
     ScreenPrinting[Screen Printing]
-    SP[Supervisor: TJ]
+    SP[MANAGER: TJ]
     SPBrandon[Brandon]
     SPJuana[Juana]
     SPLeni[Leni]
     Embroidery[Embroidery]
-    EmbSup[Supervisor: Jessica]
+    EmbSup[MANAGER: Jessica]
     Emily[Emily]
     VinylHeatPress[Vinyl Heat Press]
-    VHP[Supervisor: Otero]
+    VHP[MANAGER: Otero]
     QualityControl[Quality Control]
-    QCSup[Supervisor: Juana]
+    QCSup[MANAGER: Juana]
     FulfillmentShipping[Fulfillment/Shipping]
-    FulfillSup[Supervisor: Danale]
+    FulfillSup[MANAGER: Danale]
     CEO --> Manufacturing
     Manufacturing --> ManuMgr
     ManuMgr --> Receiving
