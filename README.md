@@ -199,36 +199,66 @@ flowchart TD
 flowchart TD
     classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
 
-    A1["Collect Client Info"]
-    A2["Tag Products and Services"]
-    A3["Determine Tax Rate"]
-    A4["Manage Services Inventory"]
-    A5["Track Vendor Tax Payments"]
-    A6["Build Tax Details in Customer Profile"]
-    A7["Generate Invoice"]
-    A8["Tom Checks and Approves Invoice"]
-    A9["Send Invoice"]
-    A10["Track Accounts for Payroll and Expenses"]
-    A11["Transfer Taxes to Savings Account"]
-    A12["Calculate Profit and Transfer to Savings"]
-    A13["Track Damages and Losses"]
-    A14["Implement Compliance and Reporting Policy"]
-    A15["Integrate with Odoo ERP"]
-
+    subgraph Client_Information
+        A1["Collect Client Info"]
+        A2["Store in Client Profile"]
+    end
+    
+    subgraph Product_Service_Management
+        B1["Tag Products and Services"]
+        B2["Manage Services Inventory (No Tax)"]
+    end
+    
+    subgraph Tax_Management
+        C1["Determine Tax Rate by State/Country"]
+        C2["Track Vendor Tax Payments"]
+        C3["Build Tax Details in Customer Profile"]
+    end
+    
+    subgraph Invoicing
+        D1["Generate Invoice"]
+        D2["Tom Checks and Approves Invoice"]
+        D3["Send Invoice"]
+    end
+    
+    subgraph Accounts_Management
+        E1["Track Accounts for Payroll and Expenses"]
+        E2["Transfer Taxes to Savings Account"]
+        E3["Calculate Profit and Transfer to Savings"]
+    end
+    
+    subgraph Damages_Losses_Tracking
+        F1["Track Damages and Losses"]
+        F2["Write Off Damages and Losses"]
+    end
+    
+    subgraph Compliance_Reporting
+        G1["Implement Compliance Policy"]
+        G2["Generate Reports"]
+    end
+    
+    subgraph Odoo_Integration
+        H1["Integrate with Odoo ERP"]
+    end
+    
     A1 --> A2
-    A2 --> A3
-    A3 --> A4
-    A4 --> A5
-    A5 --> A6
-    A6 --> A7
-    A7 --> A8
-    A8 --> A9
-    A9 --> A10
-    A10 --> A11
-    A11 --> A12
-    A12 --> A13
-    A13 --> A14
-    A14 --> A15
+    A2 --> B1
+    B1 --> B2
+    B2 --> C1
+    C1 --> C2
+    C2 --> C3
+    C3 --> D1
+    D1 --> D2
+    D2 --> D3
+    D3 --> E1
+    E1 --> E2
+    E2 --> E3
+    E3 --> F1
+    F1 --> F2
+    F2 --> G1
+    G1 --> G2
+    G2 --> H1
+
 
     class A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15 default
 ```
