@@ -180,6 +180,8 @@ flowchart TD
 
 
 ```
+[Back to top](#TOP)
+
 ## SALES WORKFLOW
 
 1. Lead Generation: The process starts with generating leads through various marketing and outreach efforts.
@@ -258,6 +260,7 @@ flowchart TD
     A5g --> A5h
 
 ```
+[Back to top](#TOP)
 
 ## DIGITAL AGENCY WORKFLOW
 
@@ -307,6 +310,7 @@ flowchart TD
 
 
 ```
+[Back to top](#TOP)
 
 ## GRAPHIC DESIGN WORKFLOW
 
@@ -352,6 +356,7 @@ flowchart TD
 
 
 ```
+[Back to top](#TOP)
 
 ## RECIEVING/INVENTORY WORKFLOW
 
@@ -396,9 +401,8 @@ flowchart TD
     C6 --> C7
     C7 --> C8
 
-
-
 ```
+[Back to top](#TOP)
 
 ## SHOPIFY ORDERS WORKFLOW
 
@@ -501,6 +505,8 @@ flowchart TD
 
 
 ```
+[Back to top](#TOP)
+
 ## EMBROIDERY WORKFLOW
 
 1. Order Reception: Orders are received.
@@ -545,9 +551,9 @@ flowchart TD
     F5b --> F4
     F6
 
-
-
 ```
+[Back to top](#TOP)
+
 
 ## HEATTRANSFER WORKFLOW
 
@@ -588,6 +594,7 @@ flowchart TD
 
 
 ```
+[Back to top](#TOP)
 
 ## FULFILLMENT WORKFLOW
 
@@ -648,8 +655,8 @@ flowchart TD
     H10b --> H2
     H11
 
-
 ```
+[Back to top](#TOP)
 
 ## CLOSING SALES & COMMISSION PAYOUT FLOW
 
@@ -695,7 +702,5 @@ flowchart TD
     A5b --> A8
     A8 --> A4
 
-
-
 ```
-
+[Back to top](#TOP)
