@@ -89,7 +89,7 @@ flowchart TD
     DigitalMgr --> GraphicDesign
     GraphicDesign --> GDSup
     GDSup --> Alex
-    GDSup --> Roselle
+    MarkSup --> Roselle
 
     class DigitalAgency,DigitalMgr manager
     class WebDev,Marketing,GraphicDesign supervisor
