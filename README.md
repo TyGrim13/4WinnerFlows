@@ -64,7 +64,7 @@ flowchart TD
     Manufacturing[Manufacturing Department]
     ManuMgr[Manager: Dave]
     Receiving[Receiving]
-    RecSup[Supervisor: Not specified]
+    RecSup[Supervisor: Assigned by Dave]
     ScreenPrinting[Screen Printing]
     SP[Supervisor: TJ]
     SPBrandon[Brandon]
@@ -76,7 +76,7 @@ flowchart TD
     VinylHeatPress[Vinyl Heat Press]
     VHP[Supervisor: Otero]
     QualityControl[Quality Control]
-    QCSup[Supervisor: Not specified]
+    QCSup[Supervisor: Juana]
     FulfillmentShipping[Fulfillment/Shipping]
     FulfillSup[Supervisor: Danale]
     CEO --> Manufacturing
