@@ -5,18 +5,19 @@ This document serves as a comprehensive guide to understanding the various workf
 
 # Table of Contents
 1. [Hierarchy Structure](#hierarchy-structure)
-2. [Overdue Tasks Notification](#overdue-tasks-notification)
-3. [Sales Workflow](#sales-workflow)
-4. [Digital Agency Workflow](#digital-agency-workflow)
-5. [Graphic Design Workflow](#graphic-design-workflow)
-6. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
-7. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
-8. [Shopify Orders Workflow](#shopify-orders-workflow)
-9. [Screen Printing Workflow](#screen-printing-workflow)
-10. [Embroidery Workflow](#embroidery-workflow)
-11. [Heat Transfer Workflow](#heat-transfer-workflow)
-12. [Fulfillment Workflow](#fulfillment-workflow)
-13. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
+2. [Accounting Workflow](#accounting-workflow)
+3. [Overdue Tasks Notification](#overdue-tasks-notification)
+4. [Sales Workflow](#sales-workflow)
+5. [Digital Agency Workflow](#digital-agency-workflow)
+6. [Graphic Design Workflow](#graphic-design-workflow)
+7. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
+8. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
+9. [Shopify Orders Workflow](#shopify-orders-workflow)
+10. [Screen Printing Workflow](#screen-printing-workflow)
+11. [Embroidery Workflow](#embroidery-workflow)
+12. [Heat Transfer Workflow](#heat-transfer-workflow)
+13. [Fulfillment Workflow](#fulfillment-workflow)
+14. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
 
 ## Hierarchy Structure
 CEO: Tom is the Chief Executive Officer who oversees all departments.
@@ -138,6 +139,102 @@ flowchart TD
 ```
 [Back to top](#TOP)
 
+## ACCOUNTING WORKFLOW
+
+1. Client Information Collection:
+    Store client contact information, including state or country, in the client profile within Odoo ERP.
+
+2. Product vs. Service Tagging:
+    Use tags to differentiate between products (goods) and services. Services are tagged as "No Tax".
+
+3. Tax Rate Determination:
+    Utilize a software or plugin to automatically determine the correct tax rate based on the client's state or country.
+
+4. Inventory Management for Services:
+    Services are inventoried under a "No Tax" category to ensure they are not taxed.
+
+5. Vendor Tax Payments:
+    Track taxes paid on vendor purchases, specifically for Nevada state tax, within Odoo ERP.
+
+6. Tax Details in Customer Profile:
+    Build tax details into the customer profile for accurate tax calculations during invoicing.
+
+7. Invoicing Process:
+    Invoices are generated using services and items in the inventory, ensuring tags are correctly applied.
+    Tom checks and approves invoices to ensure accuracy before sending them out.
+
+8. Accounts Management:
+    Use three checking accounts for payroll and expenses.
+    Use a savings account for profit and taxes.
+    Taxes paid on invoices are automatically transferred to the savings account.
+    Remaining amounts after taxes and expenses are transferred to the savings account as profit.
+
+9. Tracking Damages/Losses:
+    Damages and losses are tracked for writeoffs in Odoo ERP.
+
+10. Compliance and Reporting:
+     Implement a compliance and reporting policy (recommendation to follow).
+
+11. Integration with Odoo ERP:
+     Use outofthebox functions, plugins, and custom solutions to integrate all processes into Odoo ERP.
+
+
+ Recommendations for Compliance and Reporting Policy
+
+1. Compliance:
+    Ensure all financial transactions are recorded accurately and timely.
+    Maintain detailed records of all sales, purchases, tax payments, and expenses.
+    Regularly audit financial records to ensure compliance with state and federal tax laws.
+    Stay updated with changes in tax laws and regulations.
+
+2. Reporting:
+    Generate monthly, quarterly, and annual financial reports.
+    Include detailed breakdowns of revenues, expenses, taxes paid, and profits.
+    Use Odoo ERP’s reporting tools to automate report generation and ensure consistency.
+
+By following these steps and integrating them into Odoo ERP, you can optimize your accounting processes, ensure accurate tax calculations, and maintain compliance with financial regulations.
+
+```mermaid
+
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
+flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+
+    A1["Collect Client Info"]
+    A2["Tag Products and Services"]
+    A3["Determine Tax Rate"]
+    A4["Manage Services Inventory"]
+    A5["Track Vendor Tax Payments"]
+    A6["Build Tax Details in Customer Profile"]
+    A7["Generate Invoice"]
+    A8["Tom Checks and Approves Invoice"]
+    A9["Send Invoice"]
+    A10["Track Accounts for Payroll and Expenses"]
+    A11["Transfer Taxes to Savings Account"]
+    A12["Calculate Profit and Transfer to Savings"]
+    A13["Track Damages and Losses"]
+    A14["Implement Compliance and Reporting Policy"]
+    A15["Integrate with Odoo ERP"]
+
+    A1 --> A2
+    A2 --> A3
+    A3 --> A4
+    A4 --> A5
+    A5 --> A6
+    A6 --> A7
+    A7 --> A8
+    A8 --> A9
+    A9 --> A10
+    A10 --> A11
+    A11 --> A12
+    A12 --> A13
+    A13 --> A14
+    A14 --> A15
+
+    class A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15 default
+```
+[Back to top](#TOP)
 
 
 ## OVERDUE TASKS NOTIFICATION
