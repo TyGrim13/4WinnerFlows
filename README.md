@@ -1,6 +1,28 @@
 # 4WinnerFlows
 Workflows ERP
 
+Hierarchy Structure
+CEO: Tom is the Chief Executive Officer who oversees all departments.
+
+Sales Department:
+
+Managed by Julie.
+The sales team includes Enzo, Epsteine, and Tom, who also serves as the CEO.
+Digital Agency Department:
+
+Managed by Ty.
+Web Development is supervised by Ty.
+Marketing is supervised by Luis.
+Graphic Design is supervised by Jordan, with team members Alex and Roselle.
+Manufacturing Department:
+
+Managed by Dave.
+Receiving does not have a specified supervisor.
+Screen Printing is supervised by Brandon, with TJ, Juana, and Leni as team members.
+Embroidery is supervised by Jessica, with Emily as a team member.
+Vinyl Heat Press is supervised by Otero.
+Quality Control does not have a specified supervisor.
+Fulfillment/Shipping is supervised by Danale.
 
 ```mermaid
 flowchart TD
