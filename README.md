@@ -192,8 +192,6 @@ flowchart TD
     Include detailed breakdowns of revenues, expenses, taxes paid, and profits.
     Use Odoo ERP’s reporting tools to automate report generation and ensure consistency.
 
-By following these steps and integrating them into Odoo ERP, you can optimize your accounting processes, ensure accurate tax calculations, and maintain compliance with financial regulations.
-
 ```mermaid
 
 %%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
