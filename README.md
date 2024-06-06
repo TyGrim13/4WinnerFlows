@@ -103,9 +103,9 @@ flowchart TD
     Receiving --> RecSup
     ManuMgr --> ScreenPrinting
     ScreenPrinting --> SP
-    SP --> SPBrandon
     SP --> SPJuana
     SP --> SPLeni
+    SP --> SPBrandon
     ManuMgr --> Embroidery
     Embroidery --> EmbSup
     EmbSup --> Emily
