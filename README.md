@@ -485,7 +485,7 @@ flowchart TD
 ```
 [Back to top](#TOP)
 
-## RECIEVING INVENTORY WORKFLOW
+## RECEIVING INVENTORY WORKFLOW
 
 1. Order Placement and Notification: Orders are placed and notifications are sent.
 2. Receiving Shipment: The shipment is received.
