@@ -9,7 +9,7 @@ flowchart TD
     SalesMgr[Manager: Julie]
     Enzo[Enzo]
     Epsteine[Epsteine]
-    TomAsSales[Tom (also CEO)]
+    TomAsSales[Tom as CEO and Sales]
     CEO --> SalesDept
     SalesDept --> SalesMgr
     SalesMgr --> Enzo
@@ -73,6 +73,7 @@ flowchart TD
     QualityControl --> QCSup
     ManuMgr --> FulfillmentShipping
     FulfillmentShipping --> FulfillSup
+
 ```
 
 
