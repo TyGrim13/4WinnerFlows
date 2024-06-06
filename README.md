@@ -387,6 +387,55 @@ flowchart TD
 
 ```
 
+SHOPIFY ORDERS WORKFLOW
+
+1. Order Received: The order is received from the client's Shopify store.
+2. Collect Customer & Order Details: The system collects the company name, customer name, and shipping address.
+3. Check Inventory: The inventory is checked to see if the items are in stock.
+     If the items are in stock, they proceed directly to packaging and shipping.
+     If the items are out of stock, they are allocated to the appropriate departments for production.
+4. Allocate Items to Departments: Items are allocated to different departments based on their decoration needs.
+     Screen Printing: Items that need screen printing are processed first.
+     Vinyl Heat Press: Items that require vinyl heat pressing are processed next.
+     Embroidery: Items that require embroidery are processed last.
+5. Order Fulfilled: Once all necessary decorations are complete, the order is fulfilled.
+6. Package and Ship: The items are packaged and shipped to the customer.
+
+```mermaid
+    %%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
+flowchart TD
+  classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+
+  OrderReceived["Order Received"]
+  CollectDetails["Collect Customer & Order Details"]
+  CheckInventory["Check Inventory"]
+  PackageShip["Package and Ship"]
+  AllocateItems["Allocate Items to Departments"]
+  Embroidery["Embroidery"]
+  ScreenPrinting["Screen Printing"]
+  VinylHeatPress["Vinyl Heat Press"]
+  OrderFulfilled["Order Fulfilled"]
+
+  OrderReceived -->|"Collect Details"| CollectDetails
+  CollectDetails -->|"Check Inventory"| CheckInventory
+  CheckInventory -->|"In Stock"| PackageShip
+  CheckInventory -->|"Out of Stock"| AllocateItems
+  AllocateItems -->|"Embroidery"| Embroidery
+  AllocateItems -->|"Screen Printing"| ScreenPrinting
+  AllocateItems -->|"Vinyl Heat Press"| VinylHeatPress
+  Embroidery -->|"Complete"| OrderFulfilled
+  ScreenPrinting -->|"To Embroidery"| Embroidery
+  ScreenPrinting -->|"To Vinyl Heat Press"| VinylHeatPress
+  VinylHeatPress -->|"To Embroidery"| Embroidery
+  VinylHeatPress -->|"Complete"| OrderFulfilled
+  OrderFulfilled -->|"Package & Ship"| PackageShip
+
+  class OrderReceived, CollectDetails, CheckInventory, PackageShip, AllocateItems, Embroidery, ScreenPrinting, VinylHeatPress, OrderFulfilled default
+
+
+```
+
 SCREEN PRINTING WORKFLOW
 
 1. Order Reception: Orders are received.
