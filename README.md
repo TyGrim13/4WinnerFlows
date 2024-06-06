@@ -89,7 +89,10 @@ flowchart TD
     DigitalMgr --> GraphicDesign
     GraphicDesign --> GDSup
     GDSup --> Alex
+    GDSup --> CONTRACTORS
     MarkSup --> Roselle
+    MarkSup --> CONTRACTORS
+    WebSup --> CONTRACTORS
 
     class DigitalAgency,DigitalMgr manager
     class WebDev,Marketing,GraphicDesign supervisor
@@ -131,6 +134,7 @@ flowchart TD
     QualityControl --> QCSup
     ManuMgr --> FulfillmentShipping
     FulfillmentShipping --> FulfillSup
+    QCSup --> Leni
 
     class Manufacturing,ManuMgr manager
     class Receiving,ScreenPrinting,Embroidery,VinylHeatPress,QualityControl,FulfillmentShipping supervisor
