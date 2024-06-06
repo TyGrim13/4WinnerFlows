@@ -486,6 +486,7 @@ flowchart TD
   class OrderReceived,CollectDetails,CheckInventory,PackageShip,AllocateItems,Embroidery,ScreenPrinting,VinylHeatPress,OrderFulfilled,CreatePO,ReceivePO,CheckLowInventory,NotifyCEO,ConfirmPurchase default
 
 ```
+[Back to top](#TOP)
 
 ## SHOPIFY ORDERS WORKFLOW
 
