@@ -39,6 +39,19 @@ flowchart TD
     SalesMgr --> Epsteine
     SalesMgr --> TomAsSales
 
+flowchart TD
+    CEO[Tom]
+    SalesDept[Sales Department]
+    SalesMgr[Manager: Julie]
+    Enzo[Enzo]
+    Epsteine[Epsteine]
+    TomAsSales[Tom as CEO and Sales]
+    CEO --> SalesDept
+    SalesDept --> SalesMgr
+    SalesMgr --> Enzo
+    SalesMgr --> Epsteine
+    SalesMgr --> TomAsSales
+
     DigitalAgency[Digital Agency Department]
     DigitalMgr[Manager: Ty]
     WebDev[Web Development]
@@ -65,7 +78,7 @@ flowchart TD
     Receiving[Receiving]
     RecSup[Supervisor: Not specified]
     ScreenPrinting[Screen Printing]
-    SP[Supervisor: TJ]
+    SP[Supervisor: Brandon]
     SPTJ[TJ]
     SPJuana[Juana]
     SPLeni[Leni]
@@ -83,10 +96,10 @@ flowchart TD
     ManuMgr --> Receiving
     Receiving --> RecSup
     ManuMgr --> ScreenPrinting
-    ScreenPrinting --> SPTJ
-    SPTJ --> SPBrandon
-    SPTJ --> SPJuana
-    SPTJ --> SPLeni
+    ScreenPrinting --> SP
+    SP --> SPTJ
+    SP --> SPJuana
+    SP --> SPLeni
     ManuMgr --> Embroidery
     Embroidery --> EmbSup
     EmbSup --> Emily
@@ -96,6 +109,7 @@ flowchart TD
     QualityControl --> QCSup
     ManuMgr --> FulfillmentShipping
     FulfillmentShipping --> FulfillSup
+
 
 ```
 
