@@ -27,7 +27,7 @@ Fulfillment/Shipping is supervised by Danale.
 
 ```mermaid
 flowchart TD
-    CEO[Tom] - Eric
+    CEO[Tom] & Eric
     SalesDept[Sales Department]
     SalesMgr[Manager: Julie]
     Enzo[Enzo]
