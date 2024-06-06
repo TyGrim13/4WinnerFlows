@@ -539,10 +539,6 @@ flowchart TD
 
 ```
 
-Please try using this version of your code. If the issue persists, let me know, and we can further investigate the problem.
-
-
-```
 [Back to top](#TOP)
 
 ## SCREEN PRINTING WORKFLOW
