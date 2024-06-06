@@ -16,7 +16,7 @@ Workflows ERP
 12. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
 
 
-Hierarchy Structure
+## Hierarchy Structure
 CEO: Tom is the Chief Executive Officer who oversees all departments.
 
 Sales Department:
