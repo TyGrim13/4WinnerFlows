@@ -27,15 +27,15 @@ flowchart TD
     I7[Task is Overdue for 3 Days]
     I8[Send Notification to Supervisor, Manager, and CEO]
 
-    I1 > I2
-    I2 >|Yes| I3
-    I2 >|No| I5
-    I3 > I4
-    I4 > I5
-    I5 > I6
-    I6 >|Yes| I7
-    I6 >|No| I1
-    I7 > I8
+    I1 --> I2
+    I2 -->|Yes| I3
+    I2 -->|No| I5
+    I3 --> I4
+    I4 --> I5
+    I5 --> I6
+    I6 -->|Yes| I7
+    I6 -->|No| I1
+    I7 --> I8
 
 ```
 SALES WORKFLOW
@@ -83,29 +83,29 @@ flowchart TD
     A5g[No Action Taken]
     A5h[Notify Sales Manager]
 
-    A1 > A2
-    A2 > A3
-    A3 >|Yes| A3a
-    A3 >|No| A3b
-    A3a > A4
-    A3b > A3c
-    A3c > A3d
-    A3d >|Yes| A4
-    A3d >|No| A3e
-    A3e > A3f
-    A4 > A4a
-    A4a > A4b
-    A4b > A4c
-    A4b > A4d
-    A4b > A4e
-    A5 > A5a
-    A5a >|Yes| A5b
-    A5a >|No| A5d
-    A5b > A5c
-    A5d > A5e
-    A5e > A5f
-    A5f >|No| A5g
-    A5g > A5h
+    A1 --> A2
+    A2 --> A3
+    A3 -->|Yes| A3a
+    A3 -->|No| A3b
+    A3a --> A4
+    A3b --> A3c
+    A3c --> A3d
+    A3d -->|Yes| A4
+    A3d -->|No| A3e
+    A3e --> A3f
+    A4 --> A4a
+    A4a --> A4b
+    A4b --> A4c
+    A4b --> A4d
+    A4b --> A4e
+    A5 --> A5a
+    A5a -->|Yes| A5b
+    A5a -->|No| A5d
+    A5b --> A5c
+    A5d --> A5e
+    A5e --> A5f
+    A5f -->|No| A5g
+    A5g --> A5h
 
 ```
 
@@ -136,17 +136,17 @@ flowchart TD
     B7[Project Delivery]
     B8[PostProject Review]
 
-    B1 > B2
-    B2 > B3
-    B3 > B4
-    B4 > B5
-    B5 > B5a
-    B5a >|Yes| B6
-    B5a >|No| B5b
-    B5b > B5c
-    B5c > B5d
-    B6 > B7
-    B7 > B8
+    B1 --> B2
+    B2 --> B3
+    B3 --> B4
+    B4 --> B5
+    B5 --> B5a
+    B5a -->|Yes| B6
+    B5a -->|No| B5b
+    B5b --> B5c
+    B5c --> B5d
+    B6 --> B7
+    B7 --> B8
 
 
 ```
@@ -174,16 +174,16 @@ flowchart TD
     E6[Final Approval]
     E7[Design Delivery]
 
-    E0 > E1
-    E1 > E2
-    E2 > E3
-    E3 > E4
-    E4 > E5
-    E5 > E5a
-    E5a >|Yes| E5b
-    E5a >|No| E6
-    E5b > E4
-    E6 > E7
+    E0 --> E1
+    E1 --> E2
+    E2 --> E3
+    E3 --> E4
+    E4 --> E5
+    E5 --> E5a
+    E5a -->|Yes| E5b
+    E5a -->|No| E6
+    E5b --> E4
+    E6 --> E7
 
 ```
 
@@ -213,15 +213,15 @@ flowchart TD
     C7[Inventory Tracking]
     C8[Order Fulfillment]
 
-    C1 > C2
-    C2 > C3
-    C3 > C3a
-    C3a >|Yes| C3b
-    C3a >|No| C4
-    C4 > C5
-    C5 > C6
-    C6 > C7
-    C7 > C8
+    C1 --> C2
+    C2 --> C3
+    C3 --> C3a
+    C3a -->|Yes| C3b
+    C3a -->|No| C4
+    C4 --> C5
+    C5 --> C6
+    C6 --> C7
+    C7 --> C8
 
 ```
 
@@ -249,17 +249,17 @@ flowchart TD
     D7b[Rework Process]
     D8[Packaging and Fulfillment]
 
-    D1 > D2
-    D2 > D3
-    D3 > D4
-    D4 > D5
-    D5 > D6
-    D6 > D7
-    D7 > D7a
-    D7a >|Yes| D7b
-    D7a >|No| D8
-    D7b > D5
-    D8 > D9
+    D1 --> D2
+    D2 --> D3
+    D3 --> D4
+    D4 --> D5
+    D5 --> D6
+    D6 --> D7
+    D7 --> D7a
+    D7a -->|Yes| D7b
+    D7a -->|No| D8
+    D7b --> D5
+    D8 --> D9
 
 ```
 EMBROIDERY WORKFLOW
@@ -282,14 +282,14 @@ flowchart TD
     F5b[Rework Process]
     F6[Packaging and Fulfillment]
 
-    F1 > F2
-    F2 > F3
-    F3 > F4
-    F4 > F5
-    F5 > F5a
-    F5a >|Yes| F5b
-    F5a >|No| F6
-    F5b > F4
+    F1 --> F2
+    F2 --> F3
+    F3 --> F4
+    F4 --> F5
+    F5 --> F5a
+    F5a -->|Yes| F5b
+    F5a -->|No| F6
+    F5b --> F4
     F6
 
 
@@ -316,14 +316,14 @@ flowchart TD
     G5b[Rework Process]
     G6[Packaging and Fulfillment]
 
-    G1 > G2
-    G2 > G3
-    G3 > G4
-    G4 > G5
-    G5 > G5a
-    G5a >|Yes| G5b
-    G5a >|No| G6
-    G5b > G4
+    G1 --> G2
+    G2 --> G3
+    G3 --> G4
+    G4 --> G5
+    G5 --> G5a
+    G5a -->|Yes| G5b
+    G5a -->|No| G6
+    G5b --> G4
     G6
 
 
@@ -364,23 +364,23 @@ flowchart TD
     H10b[Reproduction Process]
     H11[Communicate with Customer]
 
-    H1 > H2
-    H2 > H3
-    H3 > H4
-    H4 > H4a
-    H4a >|Yes| H4b
-    H4a >|No| H5
-    H4b > H2
-    H5 > H6
-    H6 > H7
-    H7 > H8
-    H8 > H9
-    H9 > H10
-    H10 > H10a
-    H10a >|Yes| H10b
-    H10a >|No| H11
-    H10b > H2
-    H11 > H12
+    H1 --> H2
+    H2 --> H3
+    H3 --> H4
+    H4 --> H4a
+    H4a -->|Yes| H4b
+    H4a -->|No| H5
+    H4b --> H2
+    H5 --> H6
+    H6 --> H7
+    H7 --> H8
+    H8 --> H9
+    H9 --> H10
+    H10 --> H10a
+    H10a -->|Yes| H10b
+    H10a -->|No| H11
+    H10b --> H2
+    H11 --> H12
 
 
 ```
@@ -411,16 +411,16 @@ flowchart TD
     A7[Commission Paid Out within Specified Time]
     A8[Send Documents Back to Salesperson for Completion]
 
-    A1 > A2
-    A2 > A3
-    A3 > A4
-    A4 > A5
-    A5 >|Yes| A5a
-    A5 >|No| A5b
-    A5a > A6
-    A6 > A7
-    A5b > A8
-    A8 > A4
+    A1 --> A2
+    A2 --> A3
+    A3 --> A4
+    A4 --> A5
+    A5 -->|Yes| A5a
+    A5 -->|No| A5b
+    A5a --> A6
+    A6 --> A7
+    A5b --> A8
+    A8 --> A4
 
 
 ```
