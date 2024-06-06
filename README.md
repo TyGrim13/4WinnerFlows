@@ -408,6 +408,42 @@ flowchart TD
 
 ## AUTOMATED PURCHASE ORDER WORKFLOW
 
+1. Order Received:
+    When a new order is placed, it is immediately received and logged into the system.
+
+2. Collect Customer & Order Details:
+    The necessary customer information and order details are collected to ensure accurate processing and fulfillment.
+
+3. Check Inventory:
+    The system checks the current inventory levels for the ordered items.
+    If the items are in stock, the process moves directly to Package and Ship.
+    If the items are out of stock or low stock (inventory below two units for any variant), the workflow initiates the creation of a purchase order.
+
+4. Create Purchase Order:
+    The system automatically generates a purchase order for the necessary items that are either out of stock or below the minimum stock level.
+
+5. Notify CEO for Purchase Confirmation:
+    A notification is sent to the CEO to review and confirm the purchase order. This step ensures that all purchases are authorized at the highest level of the organization.
+
+6. Confirm Purchase of Goods:
+    Upon receiving confirmation from the CEO, the purchase order is finalized and the goods are ordered from the supplier.
+
+7. Receive Purchase Order:
+    Once the ordered goods are delivered, they are received into the inventory system, updating stock levels accordingly.
+
+8. Allocate Items to Departments:
+    The received items are then allocated to the appropriate departments based on the order requirements.
+
+9. Embroidery / Screen Printing / Vinyl Heat Press:
+    The items are processed through the necessary decoration departments, which may include embroidery, screen printing, or vinyl heat press.
+
+10. Order Fulfilled:
+     After the decoration process is completed, the order is marked as fulfilled.
+
+11. Package and Ship:
+     The completed order is packaged and shipped to the customer, concluding the workflow.
+
+
 ```mermaid
 %%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
 
