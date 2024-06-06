@@ -140,7 +140,12 @@ OVERDUE TASKS NOTIFICATION
 
 ```mermaid
 
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
 flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef decision fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+    
     I1[Task Due Date]
     I2{Check if Task is Past Due}
     I3[Task is Past Due]
@@ -149,6 +154,8 @@ flowchart TD
     I6{Check if Task is Overdue for 3 Days}
     I7[Task is Overdue for 3 Days]
     I8[Send Notification to Supervisor, Manager, and CEO]
+
+    class I2,I6 decision
 
     I1 --> I2
     I2 -->|Yes| I3
@@ -159,6 +166,7 @@ flowchart TD
     I6 -->|Yes| I7
     I6 -->|No| I1
     I7 --> I8
+
 
 ```
 SALES WORKFLOW
@@ -254,6 +262,12 @@ DIGITAL AGENCY WORKFLOW
 8. PostProject Review: A review of the project is conducted to identify lessons learned.
 ```mermaid
 flowchart TD
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
+flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef decision fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
+
     B1[Project Initiation]
     B2[Project Planning]
     B3[Task Assignment]
@@ -265,7 +279,9 @@ flowchart TD
     B5d[Task Execution]
     B6[Project Completion]
     B7[Project Delivery]
-    B8[PostProject Review]
+    B8[Post-Project Review]
+
+    class B5a decision
 
     B1 --> B2
     B2 --> B3
@@ -278,6 +294,7 @@ flowchart TD
     B5c --> B5d
     B6 --> B7
     B7 --> B8
+
 
 
 ```
@@ -341,27 +358,22 @@ RECIEVING/INVENTORY WORKFLOW
 
 ```mermaid
 flowchart TD
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+
+flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+    classDef decision fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,font-weight:bold,rx:5,ry:5;
 
     C1[Order Placement and Notification]
     C2[Receiving Shipment]
     C3[Inspection and Quality Control]
-    C3a{Items Fail Inspection}
+    C3a{Items Fail Inspection]
     C3b[Return to Supplier/Mark for Rework]
     C4[Inventory Update]
     C5[Storage Allocation]
-    C6[PutAway Process]
+    C6[Put-Away Process]
     C7[Inventory Tracking]
-    C8[Order Fulfillment]
 
-    C1 --> C2
-    C2 --> C3
-    C3 --> C3a
-    C3a -->|Yes| C3b
-    C3a -->|No| C4
-    C4 --> C5
-    C5 --> C6
-    C6 --> C7
-    C7 --> C8
 
 ```
 
