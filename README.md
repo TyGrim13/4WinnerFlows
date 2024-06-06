@@ -179,7 +179,7 @@ flowchart TD
      Use outofthebox functions, plugins, and custom solutions to integrate all processes into Odoo ERP.
 
 
- Recommendations for Compliance and Reporting Policy
+ ### Recommendations for Compliance and Reporting Policy
 
 1. Compliance:
     Ensure all financial transactions are recorded accurately and timely.
