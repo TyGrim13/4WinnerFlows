@@ -84,8 +84,8 @@ flowchart TD
     Receiving[Receiving]
     RecSup[Supervisor: Not specified]
     ScreenPrinting[Screen Printing]
-    SP[Supervisor: Brandon]
-    SPTJ[TJ]
+    SP[Supervisor: TJ]
+    SPBrandon[Brandon]
     SPJuana[Juana]
     SPLeni[Leni]
     Embroidery[Embroidery]
@@ -94,7 +94,7 @@ flowchart TD
     VinylHeatPress[Vinyl Heat Press]
     VHP[Supervisor: Otero]
     QualityControl[Quality Control]
-    QCSup[Supervisor: Not specified]
+    QCSup[Supervisor: Juana]
     FulfillmentShipping[Fulfillment/Shipping]
     FulfillSup[Supervisor: Danale]
     CEO --> Manufacturing
@@ -103,7 +103,7 @@ flowchart TD
     Receiving --> RecSup
     ManuMgr --> ScreenPrinting
     ScreenPrinting --> SP
-    SP --> SPTJ
+    SP --> SPBrandon
     SP --> SPJuana
     SP --> SPLeni
     ManuMgr --> Embroidery
