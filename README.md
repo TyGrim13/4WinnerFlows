@@ -434,11 +434,15 @@ flowchart TD
   ScreenPrinting["Screen Printing"]
   VinylHeatPress["Vinyl Heat Press"]
   OrderFulfilled["Order Fulfilled"]
+  CreatePO["Create Purchase Order"]
+  ReceivePO["Receive Purchase Order"]
 
   OrderReceived -->|"Collect Details"| CollectDetails
   CollectDetails -->|"Check Inventory"| CheckInventory
   CheckInventory -->|"In Stock"| PackageShip
-  CheckInventory -->|"Out of Stock"| AllocateItems
+  CheckInventory -->|"Out of Stock"| CreatePO
+  CreatePO --> ReceivePO
+  ReceivePO --> AllocateItems
   AllocateItems -->|"Embroidery"| Embroidery
   AllocateItems -->|"Screen Printing"| ScreenPrinting
   AllocateItems -->|"Vinyl Heat Press"| VinylHeatPress
@@ -449,7 +453,8 @@ flowchart TD
   VinylHeatPress -->|"Complete"| OrderFulfilled
   OrderFulfilled -->|"Package & Ship"| PackageShip
 
-  class OrderReceived,CollectDetails,CheckInventory,PackageShip,AllocateItems,Embroidery,ScreenPrinting,VinylHeatPress,OrderFulfilled default
+  class OrderReceived,CollectDetails,CheckInventory,PackageShip,AllocateItems,Embroidery,ScreenPrinting,VinylHeatPress,OrderFulfilled,CreatePO,ReceivePO default
+
 ```
 
 Please try using this version of your code. If the issue persists, let me know, and we can further investigate the problem.
