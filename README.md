@@ -431,7 +431,7 @@ flowchart TD
 
   OrderReceived -->|"Collect Details"| CollectDetails
   CollectDetails -->|"Check Inventory"| CheckInventory
-  CheckInventory -->|"In Stock"| PackageShip
+  CheckInventory -->|"Finished Product In Stock"| PackageShip
   CheckInventory -->|"Out of Stock or Low Stock"| CreatePO
   CreatePO --> NotifyCEO
   NotifyCEO --> ConfirmPurchase
