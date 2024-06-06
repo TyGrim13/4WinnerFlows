@@ -118,7 +118,7 @@ flowchart TD
 
     class Manufacturing,ManuMgr manager
     class Receiving,ScreenPrinting,Embroidery,VinylHeatPress,QualityControl,FulfillmentShipping supervisor
-    class SPTJ,SPJuana,SPLeni,Emily team
+    class SPBrandon,SPJuana,SPLeni,Emily team
 
 
 
