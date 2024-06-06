@@ -9,7 +9,7 @@ This document serves as a comprehensive guide to understanding the various workf
 3. [Sales Workflow](#sales-workflow)
 4. [Digital Agency Workflow](#digital-agency-workflow)
 5. [Graphic Design Workflow](#graphic-design-workflow)
-6. [Receiving/Inventory Workflow](#receivinginventory-workflow)
+6. [Receiving/Inventory Workflow](#inventory-workflow)
 7. [Shopify Orders Workflow](#shopify-orders-workflow)
 8. [Screen Printing Workflow](#screen-printing-workflow)
 9. [Embroidery Workflow](#embroidery-workflow)
