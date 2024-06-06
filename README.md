@@ -254,7 +254,6 @@ flowchart TD
     F1 --> F2
     F2 --> G1
     G1 --> G2
-    G2 --> H1
 
 ```
 [Back to top](#TOP)
