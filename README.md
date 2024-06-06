@@ -237,9 +237,6 @@ flowchart TD
         G2["Generate Reports"]
     end
     
-    subgraph Odoo_Integration
-        H1["Integrate with Odoo ERP"]
-    end
     
     A1 --> A2
     A2 --> B1
