@@ -449,7 +449,7 @@ flowchart TD
   VinylHeatPress -->|"Complete"| OrderFulfilled
   OrderFulfilled -->|"Package & Ship"| PackageShip
 
-  class OrderReceived, CollectDetails, CheckInventory, PackageShip, AllocateItems, Embroidery, ScreenPrinting, VinylHeatPress, OrderFulfilled default
+  class OrderReceived,CollectDetails,CheckInventory,PackageShip,AllocateItems,Embroidery,ScreenPrinting,VinylHeatPress,OrderFulfilled default
 ```
 
 Please try using this version of your code. If the issue persists, let me know, and we can further investigate the problem.
