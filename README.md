@@ -2,19 +2,19 @@
 Workflows ERP
 
 
-mermaid'''
+```mermaid
 flowchart TD
     CEO[Tom]
     SalesDept[Sales Department]
     SalesMgr[Manager: Julie]
     Enzo[Enzo]
     Epsteine[Epsteine]
-    Tom2[Tom (also CEO)]
+    TomAsSales[Tom (also CEO)]
     CEO --> SalesDept
     SalesDept --> SalesMgr
     SalesMgr --> Enzo
     SalesMgr --> Epsteine
-    SalesMgr --> Tom2
+    SalesMgr --> TomAsSales
 
     DigitalAgency[Digital Agency Department]
     DigitalMgr[Manager: Ty]
@@ -73,7 +73,7 @@ flowchart TD
     QualityControl --> QCSup
     ManuMgr --> FulfillmentShipping
     FulfillmentShipping --> FulfillSup
-'''
+```
 
 
 
