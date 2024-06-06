@@ -5,18 +5,19 @@ Hierarchy Structure
 CEO: Tom is the Chief Executive Officer who oversees all departments.
 
 Sales Department:
-
-Managed by Julie.
+Managed by Julie. All sales people report to Julie. All managers and excalations are reported to Julie and/or Tom.
 The sales team includes Enzo, Epsteine, and Tom, who also serves as the CEO.
 Digital Agency Department:
 
-Managed by Ty.
+Digital Agency Department:
+Managed by Ty. All departments supervisors report to Ty.
 Web Development is supervised by Ty.
 Marketing is supervised by Luis.
 Graphic Design is supervised by Jordan, with team members Alex and Roselle.
 Manufacturing Department:
 
-Managed by Dave.
+Production/Warehouse
+Managed by Dave. All departments supervisors report to Dave.
 Receiving does not have a specified supervisor.
 Screen Printing is supervised by Brandon, with TJ, Juana, and Leni as team members.
 Embroidery is supervised by Jessica, with Emily as a team member.
