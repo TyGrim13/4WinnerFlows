@@ -19,10 +19,10 @@ Manufacturing Department:
 Production/Warehouse
 Managed by Dave. All departments supervisors report to Dave.
 Receiving does not have a specified supervisor.
-Screen Printing is supervised by Brandon, with TJ, Juana, and Leni as team members.
-Embroidery is supervised by Jessica, with Emily as a team member.
+Screen Printing is supervised by TJ, with Brandon, Juana, and Leni as team members.
+Embroidery is supervised by Jessica, with Emily and Leni as a team member.
 Vinyl Heat Press is supervised by Otero.
-Quality Control does not have a specified supervisor.
+Quality Control is supervised by Juana.
 Fulfillment/Shipping is supervised by Danale.
 
 ```mermaid
@@ -83,8 +83,8 @@ flowchart TD
     ManuMgr --> Receiving
     Receiving --> RecSup
     ManuMgr --> ScreenPrinting
-    ScreenPrinting --> SPBrandon
-    SPBrandon --> SPTJ
+    ScreenPrinting --> SPTJ
+    SPTJ --> SPBrandon
     SPBrandon --> SPJuana
     SPBrandon --> SPLeni
     ManuMgr --> Embroidery
