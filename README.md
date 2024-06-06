@@ -85,8 +85,8 @@ flowchart TD
     ManuMgr --> ScreenPrinting
     ScreenPrinting --> SPTJ
     SPTJ --> SPBrandon
-    SPBrandon --> SPJuana
-    SPBrandon --> SPLeni
+    SPTJ --> SPJuana
+    SPTJ --> SPLeni
     ManuMgr --> Embroidery
     Embroidery --> EmbSup
     EmbSup --> Emily
