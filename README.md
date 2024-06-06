@@ -65,7 +65,7 @@ flowchart TD
     Receiving[Receiving]
     RecSup[Supervisor: Not specified]
     ScreenPrinting[Screen Printing]
-    SPBrandon[Supervisor: Brandon]
+    SPTJ[Supervisor: TJ]
     SPTJ[TJ]
     SPJuana[Juana]
     SPLeni[Leni]
