@@ -420,7 +420,7 @@ flowchart TD
 6. Package and Ship: The items are packaged and shipped to the customer.
 
 ```mermaid
-    %%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
 
 flowchart TD
   classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
@@ -450,6 +450,9 @@ flowchart TD
   OrderFulfilled -->|"Package & Ship"| PackageShip
 
   class OrderReceived, CollectDetails, CheckInventory, PackageShip, AllocateItems, Embroidery, ScreenPrinting, VinylHeatPress, OrderFulfilled default
+```
+
+Please try using this version of your code. If the issue persists, let me know, and we can further investigate the problem.
 
 
 ```
