@@ -11,14 +11,15 @@ This document serves as a comprehensive guide to understanding the various workf
 5. [Sales Workflow](#sales-workflow)
 6. [Digital Agency Workflow](#digital-agency-workflow)
 7. [Graphic Design Workflow](#graphic-design-workflow)
-8. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
-9. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
-10. [Shopify Orders Workflow](#shopify-orders-workflow)
-11. [Screen Printing Workflow](#screen-printing-workflow)
-12. [Embroidery Workflow](#embroidery-workflow)
-13. [Heat Transfer Workflow](#heat-transfer-workflow)
-14. [Fulfillment Workflow](#fulfillment-workflow)
-15. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
+8. [Inventory Manufacturing Pricing](#inventory-manufacturing-pricing)
+9. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
+10. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
+11. [Shopify Orders Workflow](#shopify-orders-workflow)
+12. [Screen Printing Workflow](#screen-printing-workflow)
+13. [Embroidery Workflow](#embroidery-workflow)
+14. [Heat Transfer Workflow](#heat-transfer-workflow)
+15. [Fulfillment Workflow](#fulfillment-workflow)
+16. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
 
 ## Hierarchy Structure
 CEO: Tom is the Chief Executive Officer who oversees all departments.
@@ -557,6 +558,60 @@ flowchart TD
 
 ```
 [Back to top](#TOP)
+
+## INVENTORY MANUFACTURING PRICING 
+
+
+```mermaid
+
+graph TD
+  Inventory["Inventory"]
+  Order["Manufacturer Order"]
+  Inventory --> |"Allocate Materials"| Order
+  Order --> |"Process Order"| Assembly["Final Product Assembly"]
+  Assembly --> |"Completed"| Shipping["Shipping"]
+  Shipping --> |"Delivered"| Customer["Customer"]
+  Pricing["Pricing Tiers"]
+  Pricing --> Diamond["Diamond"]
+  Pricing --> Platinum["Platinum"]
+  Pricing --> Bronze["Bronze"]
+  Pricing --> NonMember["Non-member"]
+  Diamond --> DiamondTee["Blank Tee $5"]
+  Diamond --> DiamondEmbroideryFee["Embroidery Fee $7.49"]
+  Diamond --> DiamondScreenPrintingFee["Screen Printing Fee $4.49"]
+  Platinum --> PlatinumTee["Blank Tee $7"]
+  Platinum --> PlatinumEmbroideryFee["Embroidery Fee $9.49"]
+  Platinum --> PlatinumScreenPrintingFee["Screen Printing Fee $7.49"]
+  Bronze --> BronzeTee["Blank Tee $8"]
+  Bronze --> BronzeEmbroideryFee["Embroidery Fee $10.49"]
+  Bronze --> BronzeScreenPrintingFee["Screen Printing Fee $8.49"]
+  NonMember --> NonMemberTee["Blank Tee $10"]
+  NonMember --> NonMemberEmbroideryFee["Embroidery Fee $12.49"]
+  NonMember --> NonMemberScreenPrintingFee["Screen Printing Fee $10.49"]
+  Materials["Materials"]
+  Services["Services"]
+  Materials --> Ink["Ink $0.50"]
+  Materials --> Thread["Thread $0.50"]
+  Services --> Embroidery["Embroidery"]
+  Services --> ScreenPrinting["Screen Printing"]
+  Diamond --> DiamondOrder["Diamond Order"]
+  Platinum --> PlatinumOrder["Platinum Order"]
+  Bronze --> BronzeOrder["Bronze Order"]
+  NonMember --> NonMemberOrder["Non-member Order"]
+  DiamondOrder --> |"Uses"| Inventory
+  PlatinumOrder --> |"Uses"| Inventory
+  BronzeOrder --> |"Uses"| Inventory
+  NonMemberOrder --> |"Uses"| Inventory
+  Assembly --> DiamondTee
+  Assembly --> PlatinumTee
+  Assembly --> BronzeTee
+  Assembly --> NonMemberTee
+  Assembly --> Embroidery
+  Assembly --> ScreenPrinting
+  
+  ```
+
+  [Back to top](#TOP)
 
 ## RECEIVING INVENTORY WORKFLOW
 
