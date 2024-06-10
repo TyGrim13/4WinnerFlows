@@ -561,6 +561,50 @@ flowchart TD
 
 ## INVENTORY MANUFACTURING PRICING 
 
+ Pricing Tiers
+1. Diamond
+    Blank Tee: $5
+    Embroidery Fee: $7.49
+    Screen Printing Fee: $4.49
+
+2. Platinum
+    Blank Tee: $7
+    Embroidery Fee: $9.49
+    Screen Printing Fee: $7.49
+
+3. Bronze
+    Blank Tee: $8
+    Embroidery Fee: $10.49
+    Screen Printing Fee: $8.49
+
+4. Nonmember
+    Blank Tee: $10
+    Embroidery Fee: $12.49
+    Screen Printing Fee: $10.49
+
+ Inventory and Materials
+ Materials
+   Ink: $0.50
+   Thread: $0.50
+ Services
+   Embroidery
+   Screen Printing
+
+ Workflow
+1. Inventory: All raw materials and services are stored in inventory.
+2. Manufacturer Order: When an order is placed, materials are allocated from the inventory.
+3. Final Product Assembly: The allocated materials and services are used to assemble the final product.
+4. Shipping: The completed product is shipped to the customer.
+5. Customer: The customer receives the delivered product.
+
+ Detailed Process
+ Order Processing: Orders are processed based on the pricing tier of the customer (Diamond, Platinum, Bronze, Nonmember).
+ Inventory Allocation: Materials (ink and thread) and services (embroidery, screen printing) are taken from inventory for each order.
+ Product Assembly: The final product is assembled using the allocated materials and services.
+ Shipping and Delivery: The completed product is shipped to the customer.
+
+Each membership level affects the pricing of the blank tee, embroidery fee, and screen printing fee, while the material costs (ink and thread) remain constant across all membership levels.
+
 
 ```mermaid
 
