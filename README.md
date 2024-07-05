@@ -435,6 +435,8 @@ flowchart TD
     A5f{Check Action in 3 Days}
     A5g[No Action Taken]
     A5h[Notify Sales Manager]
+    QA1[Record Calls]
+    QA2[Random QA Checks by Supervisor]
 
     A1 --> A2
     A2 --> A3
@@ -459,6 +461,8 @@ flowchart TD
     A5e --> A5f
     A5f -->|No| A5g
     A5g --> A5h
+    A3a --> QA1
+    QA1 --> QA2
 
 ```
 [Back to top](#TOP)
