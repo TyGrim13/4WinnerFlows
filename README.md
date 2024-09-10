@@ -5,21 +5,22 @@ This document serves as a comprehensive guide to understanding the various workf
 
 # Table of Contents
 1. [Hierarchy Structure](#hierarchy-structure)
-2. [Accounting Workflow](#accounting-workflow)
-3. [Overdue Tasks Notification](#overdue-tasks-notification)
-4. [Client Onboarding Workflow](#client-onboarding-workflow)
-5. [Sales Workflow](#sales-workflow)
-6. [Digital Agency Workflow](#digital-agency-workflow)
-7. [Graphic Design Workflow](#graphic-design-workflow)
-8. [Inventory Manufacturing Pricing](#inventory-manufacturing-pricing)
-9. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
-10. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
-11. [Shopify Orders Workflow](#shopify-orders-workflow)
-12. [Screen Printing Workflow](#screen-printing-workflow)
-13. [Embroidery Workflow](#embroidery-workflow)
-14. [Heat Transfer Workflow](#heat-transfer-workflow)
-15. [Fulfillment Workflow](#fulfillment-workflow)
-16. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
+2. [Diamond Pricing Ruls](#DIAMOND PRICING RULE WORKFLOW)
+3. [Accounting Workflow](#accounting-workflow)
+4. [Overdue Tasks Notification](#overdue-tasks-notification)
+5. [Client Onboarding Workflow](#client-onboarding-workflow)
+6. [Sales Workflow](#sales-workflow)
+7. [Digital Agency Workflow](#digital-agency-workflow)
+8. [Graphic Design Workflow](#graphic-design-workflow)
+9. [Inventory Manufacturing Pricing](#inventory-manufacturing-pricing)
+10. [Receiving/Inventory Workflow](#receiving-inventory-workflow)
+11. [Automated Purchase Order Workflow](#automated-purchase-order-workflow)
+12. [Shopify Orders Workflow](#shopify-orders-workflow)
+13. [Screen Printing Workflow](#screen-printing-workflow)
+14. [Embroidery Workflow](#embroidery-workflow)
+15. [Heat Transfer Workflow](#heat-transfer-workflow)
+16. [Fulfillment Workflow](#fulfillment-workflow)
+17. [Closing Sales & Commission Payout Flow](#closing-sales--commission-payout-flow)
 
 ## Hierarchy Structure
 CEO: Tom is the Chief Executive Officer who oversees all departments.
@@ -144,7 +145,6 @@ flowchart TD
 
 ##DIAMOND PRICING RULE WORKFLOW
 
-DIAMOND PRICING RULE WORKFLOW
 This workflow explains how markups are applied for Diamond customers placing large or custom bulk orders when the lead time is less than 6 weeks. Diamond customers receive the best base pricing, but shorter lead times incur progressively higher markups to account for the additional resources required to meet tight deadlines.
 
 Breakdown:
