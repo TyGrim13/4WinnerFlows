@@ -5,7 +5,7 @@ This document serves as a comprehensive guide to understanding the various workf
 
 # Table of Contents
 1. [Hierarchy Structure](#hierarchy-structure)
-2. [Diamond Pricing Ruls](#DIAMOND-PRICING-RULE-WORKFLOW)
+2. [Diamond Pricing Rules](#diamond-pricing-rule-workflow)
 3. [Accounting Workflow](#accounting-workflow)
 4. [Overdue Tasks Notification](#overdue-tasks-notification)
 5. [Client Onboarding Workflow](#client-onboarding-workflow)
