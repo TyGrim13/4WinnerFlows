@@ -143,7 +143,7 @@ flowchart TD
 ```
 [Back to top](#TOP)
 
-##Diamond Pricing Rules
+## Diamond Pricing Rules
 
 This workflow explains how markups are applied for Diamond customers placing large or custom bulk orders when the lead time is less than 6 weeks. Diamond customers receive the best base pricing, but shorter lead times incur progressively higher markups to account for the additional resources required to meet tight deadlines.
 
