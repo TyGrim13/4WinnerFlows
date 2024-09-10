@@ -77,11 +77,10 @@ flowchart TD
     WebDev[Web Development]
     WebSup[MANAGER: Ty]
     Marketing[Marketing]
-    MarkSup[MANAGER: Luis]
+    MarkSup[MANAGER: Wells]
     GraphicDesign[Graphic Design]
     GDSup[MANAGER: Jordan]
     Alex[Alex]
-    Roselle[Roselle]
     CEO --> DigitalAgency
     DigitalAgency --> DigitalMgr
     DigitalMgr --> WebDev
@@ -92,7 +91,6 @@ flowchart TD
     GraphicDesign --> GDSup
     GDSup --> Alex
     GDSup --> CONTRACTORS
-    MarkSup --> Roselle
     MarkSup --> CONTRACTORS
     WebSup --> CONTRACTORS
 
@@ -106,7 +104,6 @@ flowchart TD
     RecSup[MANAGER: Not specified]
     ScreenPrinting[Screen Printing]
     SP[MANAGER: TJ]
-    SPBrandon[Brandon]
     SPJuana[Juana]
     SPLeni[Leni]
     Embroidery[Embroidery]
@@ -126,7 +123,6 @@ flowchart TD
     ScreenPrinting --> SP
     SP --> SPJuana
     SP --> SPLeni
-    SP --> SPBrandon
     ManuMgr --> Embroidery
     Embroidery --> EmbSup
     EmbSup --> Emily
