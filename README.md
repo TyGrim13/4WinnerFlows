@@ -32,7 +32,7 @@ Digital Agency Department:
 Digital Agency Department:
 Managed by Ty. All departments supervisors report to Ty.
 Web Development is supervised by Ty.
-Marketing is supervised by Luis.
+Marketing is supervised by Wells.
 Graphic Design is supervised by Jordan, with team members Alex and Roselle.
 Manufacturing Department:
 
@@ -144,28 +144,29 @@ flowchart TD
 
 ##DIAMOND PRICING RULE WORKFLOW
 
+DIAMOND PRICING RULE WORKFLOW
+This workflow explains how markups are applied for Diamond customers placing large or custom bulk orders when the lead time is less than 6 weeks. Diamond customers receive the best base pricing, but shorter lead times incur progressively higher markups to account for the additional resources required to meet tight deadlines.
+
+Breakdown:
 Customer Places Large or Custom Bulk Order:
 
-The workflow is initiated when a Diamond customer places a large or custom bulk order.
+The workflow starts when a Diamond customer places a large or custom bulk order.
 Lead Time Provided?:
 
-The system checks if the customer has provided a lead time (i.e., the number of weeks before the order needs to be fulfilled).
-If no lead time is provided, the system prompts that it is required to apply the appropriate pricing adjustments.
+The system checks whether the customer has provided a lead time (i.e., the number of weeks before the order is required).
+If no lead time is provided, the system prompts the customer that it is required to proceed with pricing adjustments.
 Lead Time Less Than 6 Weeks:
 
-For lead times shorter than 6 weeks, progressively higher markups are applied based on how little notice is given.
+For lead times shorter than 6 weeks, progressively increasing markups are applied based on how short the lead time is.
 Lead Time of 4 to 6 Weeks:
 
-A 10% mark-up is applied for orders with a lead time of 4 to 6 weeks. This reflects the need for increased resource allocation to meet the order deadline in a shorter timeframe.
+A 10% mark-up is applied for orders with a lead time of 4 to 6 weeks. This ensures adequate resources are allocated to meet the shorter deadline.
 Lead Time of 2 to 4 Weeks:
 
-A 20% mark-up is applied when the lead time is between 2 and 4 weeks, as the urgency increases and more resources are diverted to handle the order in time.
-Lead Time of 1 to 2 Weeks:
+A 15% mark-up is applied when the lead time is between 2 and 4 weeks. The tighter timeframe requires more resource allocation, increasing the cost.
+Lead Time Less Than 2 Weeks:
 
-A 30% mark-up is applied for lead times of 1 to 2 weeks. The need for expedited processing and priority handling justifies this higher mark-up.
-Lead Time Less Than 1 Week:
-
-A 35% mark-up is applied for orders with less than 1 week of lead time. The short notice requires extreme prioritization and often disrupts other scheduled orders, leading to the highest cost increase.
+For orders with a lead time of less than 2 weeks, a 30% mark-up is applied. This is the maximum mark-up applied, reflecting the extreme urgency and priority required to fulfill the order within such a short window.
 
 
 ```mermaid
@@ -179,21 +180,19 @@ flowchart TD
         A1["Customer Places Order"]
         A2["Lead Time Provided?"]
         A3["Lead Time >= 6 Weeks"]
-        A4["Apply 20% Mark-up"]
-        A5["Lead Time >= 4 Weeks"]
+        A4["Best Price (No Mark-up)"]
+        A5["Lead Time 4-6 Weeks"]
         A6["Apply 10% Mark-up"]
-        A7["Lead Time >= 2 Weeks"]
+        A7["Lead Time 2-4 Weeks"]
         A8["Apply 15% Mark-up"]
-        A9["Lead Time >= 1 Week"]
-        A10["Apply 25% Mark-up"]
-        A11["Lead Time < 1 Week"]
-        A12["Apply 30% Mark-up"]
-        A13["Lead Time Required"]
+        A9["Lead Time < 2 Weeks"]
+        A10["Apply 30% Mark-up"]
+        A11["Lead Time Required"]
     end
     
     A1 --> A2
     A2 -- Yes --> A3
-    A2 -- No --> A13
+    A2 -- No --> A11
     A3 -- Yes --> A4
     A3 -- No --> A5
     A5 -- Yes --> A6
@@ -201,8 +200,7 @@ flowchart TD
     A7 -- Yes --> A8
     A7 -- No --> A9
     A9 -- Yes --> A10
-    A9 -- No --> A11
-    A11 -- Yes --> A12
+
 
 ```
 
