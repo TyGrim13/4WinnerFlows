@@ -144,6 +144,8 @@ flowchart TD
 
 ##DIAMOND PRICING RULE WORKFLOW
 
+```mermaid
+
 %%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
 
 flowchart TD
@@ -177,6 +179,8 @@ flowchart TD
     A9 -- Yes --> A10
     A9 -- No --> A11
     A11 -- Yes --> A12
+
+```
 
 
 
