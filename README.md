@@ -144,35 +144,28 @@ flowchart TD
 
 ##DIAMOND PRICING RULE WORKFLOW
 
-This workflow outlines how pricing is dynamically adjusted based on the lead time provided by customers. The pricing structure incentivizes clients to provide more advance notice for orders, offering discounts for longer lead times and mark-ups for shorter lead times. The primary goal is to ensure customers understand how planning ahead can result in cost savings, while last-minute orders incur additional charges due to the expedited processing required.
+Customer Places Large or Custom Bulk Order:
 
-Breakdown:
-Customer Places Order:
-
-The process begins when a customer places an order for products or services.
+The workflow is initiated when a Diamond customer places a large or custom bulk order.
 Lead Time Provided?:
 
-The system checks if the customer has provided a lead time (the number of weeks before the delivery date).
-If no lead time is provided, the system prompts that it is required to proceed with pricing adjustments.
-Lead Time of 6 Weeks or More:
+The system checks if the customer has provided a lead time (i.e., the number of weeks before the order needs to be fulfilled).
+If no lead time is provided, the system prompts that it is required to apply the appropriate pricing adjustments.
+Lead Time Less Than 6 Weeks:
 
-Customers who provide a lead time of 6 weeks or more receive the maximum benefit, with a 20% mark-up applied. This encourages early planning and efficient scheduling for production.
+For lead times shorter than 6 weeks, progressively higher markups are applied based on how little notice is given.
 Lead Time of 4 to 6 Weeks:
 
-For orders with 4 to 6 weeks of lead time, a 15% mark-up is applied. This still rewards early notice but offers slightly reduced savings compared to the maximum.
+A 10% mark-up is applied for orders with a lead time of 4 to 6 weeks. This reflects the need for increased resource allocation to meet the order deadline in a shorter timeframe.
 Lead Time of 2 to 4 Weeks:
 
-If the lead time falls between 2 and 4 weeks, a 10% mark-up is applied. While it's still manageable, this timeframe requires more immediate production planning.
+A 20% mark-up is applied when the lead time is between 2 and 4 weeks, as the urgency increases and more resources are diverted to handle the order in time.
 Lead Time of 1 to 2 Weeks:
 
-Orders with a lead time of 1 to 2 weeks receive a 5% mark-up, reflecting the tighter scheduling required to fulfill the order.
-Lead Time Less than 1 Week:
+A 30% mark-up is applied for lead times of 1 to 2 weeks. The need for expedited processing and priority handling justifies this higher mark-up.
+Lead Time Less Than 1 Week:
 
-For orders with less than 1 week of notice, a 30% mark-up is applied. This significant increase reflects the need for rush processing and prioritization of resources to meet the tight deadline.
-Why This System Works:
-Incentivizes Early Planning: Customers are encouraged to provide longer lead times for more cost-effective pricing.
-Reflects Real Costs: Shorter lead times demand more resources, so mark-ups help cover the cost of expedited production.
-Clear and Transparent: By showing this pricing structure, clients can easily see the financial benefits of advanced planning, leading to smoother production cycles for the business.
+A 35% mark-up is applied for orders with less than 1 week of lead time. The short notice requires extreme prioritization and often disrupts other scheduled orders, leading to the highest cost increase.
 
 
 ```mermaid
@@ -188,11 +181,11 @@ flowchart TD
         A3["Lead Time >= 6 Weeks"]
         A4["Apply 20% Mark-up"]
         A5["Lead Time >= 4 Weeks"]
-        A6["Apply 15% Mark-up"]
+        A6["Apply 10% Mark-up"]
         A7["Lead Time >= 2 Weeks"]
-        A8["Apply 10% Mark-up"]
+        A8["Apply 15% Mark-up"]
         A9["Lead Time >= 1 Week"]
-        A10["Apply 5% Mark-up"]
+        A10["Apply 25% Mark-up"]
         A11["Lead Time < 1 Week"]
         A12["Apply 30% Mark-up"]
         A13["Lead Time Required"]
