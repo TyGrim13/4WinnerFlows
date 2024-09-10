@@ -144,25 +144,40 @@ flowchart TD
 
 ##DIAMOND PRICING RULE WORKFLOW
 
-flowchart TD
-    A[Customer Places Order] --> B{Lead Time Provided?}
-    B -- Yes --> C{Lead Time >= 6 weeks?}
-    C -- Yes --> D[Apply 20% Discount]
-    C -- No --> E{Lead Time >= 4 weeks?}
-    E -- Yes --> F[Apply 15% Discount]
-    E -- No --> G{Lead Time >= 2 weeks?}
-    G -- Yes --> H[Apply 10% Discount]
-    G -- No --> I{Lead Time >= 1 week?}
-    I -- Yes --> J[Apply 5% Discount]
-    I -- No --> K[Apply 30% Mark-up]
-    B -- No --> L[Lead Time Required]
+%%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
 
-    style A fill:#bbf,stroke:#333,stroke-width:2px;
-    style D fill:#bfb,stroke:#333,stroke-width:2px;
-    style F fill:#bfb,stroke:#333,stroke-width:2px;
-    style H fill:#bfb,stroke:#333,stroke-width:2px;
-    style J fill:#bfb,stroke:#333,stroke-width:2px;
-    style K fill:#f99,stroke:#333,stroke-width:2px;
+flowchart TD
+    classDef default fill:#f9f9f9,stroke:#4a90e2,stroke-width:2px,color:#333,font-family:'Arial',font-size:14px,rx:5,ry:5;
+
+    subgraph Diamond_Pricing_Rule_Workflow
+        A1["Customer Places Order"]
+        A2["Lead Time Provided?"]
+        A3["Lead Time >= 6 Weeks"]
+        A4["Apply 20% Discount"]
+        A5["Lead Time >= 4 Weeks"]
+        A6["Apply 15% Discount"]
+        A7["Lead Time >= 2 Weeks"]
+        A8["Apply 10% Discount"]
+        A9["Lead Time >= 1 Week"]
+        A10["Apply 5% Discount"]
+        A11["Lead Time < 1 Week"]
+        A12["Apply 30% Mark-up"]
+        A13["Lead Time Required"]
+    end
+    
+    A1 --> A2
+    A2 -- Yes --> A3
+    A2 -- No --> A13
+    A3 -- Yes --> A4
+    A3 -- No --> A5
+    A5 -- Yes --> A6
+    A5 -- No --> A7
+    A7 -- Yes --> A8
+    A7 -- No --> A9
+    A9 -- Yes --> A10
+    A9 -- No --> A11
+    A11 -- Yes --> A12
+
 
 
 ## ACCOUNTING WORKFLOW
