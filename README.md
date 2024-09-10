@@ -142,6 +142,29 @@ flowchart TD
 ```
 [Back to top](#TOP)
 
+##DIAMOND PRICING RULE WORKFLOW
+
+flowchart TD
+    A[Customer Places Order] --> B{Lead Time Provided?}
+    B -- Yes --> C{Lead Time >= 6 weeks?}
+    C -- Yes --> D[Apply 20% Discount]
+    C -- No --> E{Lead Time >= 4 weeks?}
+    E -- Yes --> F[Apply 15% Discount]
+    E -- No --> G{Lead Time >= 2 weeks?}
+    G -- Yes --> H[Apply 10% Discount]
+    G -- No --> I{Lead Time >= 1 week?}
+    I -- Yes --> J[Apply 5% Discount]
+    I -- No --> K[Apply 30% Mark-up]
+    B -- No --> L[Lead Time Required]
+
+    style A fill:#bbf,stroke:#333,stroke-width:2px;
+    style D fill:#bfb,stroke:#333,stroke-width:2px;
+    style F fill:#bfb,stroke:#333,stroke-width:2px;
+    style H fill:#bfb,stroke:#333,stroke-width:2px;
+    style J fill:#bfb,stroke:#333,stroke-width:2px;
+    style K fill:#f99,stroke:#333,stroke-width:2px;
+
+
 ## ACCOUNTING WORKFLOW
 
 1. Client Information Collection:
