@@ -5,7 +5,7 @@ This document serves as a comprehensive guide to understanding the various workf
 
 # Table of Contents
 1. [Hierarchy Structure](#hierarchy-structure)
-2. [Diamond Pricing Rules](#diamond-pricing-rule-workflow)
+2. [Diamond Pricing Rules](#diamond-pricing-rules)
 3. [Accounting Workflow](#accounting-workflow)
 4. [Overdue Tasks Notification](#overdue-tasks-notification)
 5. [Client Onboarding Workflow](#client-onboarding-workflow)
@@ -143,7 +143,7 @@ flowchart TD
 ```
 [Back to top](#TOP)
 
-##DIAMOND PRICING RULE WORKFLOW
+##DIAMOND PRICING RULES
 
 This workflow explains how markups are applied for Diamond customers placing large or custom bulk orders when the lead time is less than 6 weeks. Diamond customers receive the best base pricing, but shorter lead times incur progressively higher markups to account for the additional resources required to meet tight deadlines.
 
@@ -203,7 +203,7 @@ flowchart TD
 
 
 ```
-
+[Back to top](#TOP)
 
 
 ## ACCOUNTING WORKFLOW
