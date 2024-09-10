@@ -144,6 +144,37 @@ flowchart TD
 
 ##DIAMOND PRICING RULE WORKFLOW
 
+This workflow outlines how pricing is dynamically adjusted based on the lead time provided by customers. The pricing structure incentivizes clients to provide more advance notice for orders, offering discounts for longer lead times and mark-ups for shorter lead times. The primary goal is to ensure customers understand how planning ahead can result in cost savings, while last-minute orders incur additional charges due to the expedited processing required.
+
+Breakdown:
+Customer Places Order:
+
+The process begins when a customer places an order for products or services.
+Lead Time Provided?:
+
+The system checks if the customer has provided a lead time (the number of weeks before the delivery date).
+If no lead time is provided, the system prompts that it is required to proceed with pricing adjustments.
+Lead Time of 6 Weeks or More:
+
+Customers who provide a lead time of 6 weeks or more receive the maximum benefit, with a 20% mark-up applied. This encourages early planning and efficient scheduling for production.
+Lead Time of 4 to 6 Weeks:
+
+For orders with 4 to 6 weeks of lead time, a 15% mark-up is applied. This still rewards early notice but offers slightly reduced savings compared to the maximum.
+Lead Time of 2 to 4 Weeks:
+
+If the lead time falls between 2 and 4 weeks, a 10% mark-up is applied. While it's still manageable, this timeframe requires more immediate production planning.
+Lead Time of 1 to 2 Weeks:
+
+Orders with a lead time of 1 to 2 weeks receive a 5% mark-up, reflecting the tighter scheduling required to fulfill the order.
+Lead Time Less than 1 Week:
+
+For orders with less than 1 week of notice, a 30% mark-up is applied. This significant increase reflects the need for rush processing and prioritization of resources to meet the tight deadline.
+Why This System Works:
+Incentivizes Early Planning: Customers are encouraged to provide longer lead times for more cost-effective pricing.
+Reflects Real Costs: Shorter lead times demand more resources, so mark-ups help cover the cost of expedited production.
+Clear and Transparent: By showing this pricing structure, clients can easily see the financial benefits of advanced planning, leading to smoother production cycles for the business.
+
+
 ```mermaid
 
 %%{init: {'theme': 'forest', 'themeVariables': { 'primaryColor': '#4a90e2', 'edgeLabelBackground': '#ffffff', 'tertiaryColor': '#f4f4f4', 'primaryBorderColor': '#333', 'primaryTextColor': '#333', 'fontFamily': 'Arial'}}}%%
